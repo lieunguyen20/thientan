@@ -1,0 +1,754 @@
+
+<div class="legacy-reset">
+    <span data-bh-layer-url="https://www.bhphotovideo.com/find/feedbackLayer.jsp" class="openInOnePopupLayer"
+      data-bhLayerCache="noLayerCache">
+      <div class="fl-feedbackTab"></div>
+    </span>
+    <!-- FOOTER: Below -->
+    <ng-container>
+      <ng-container *ngTemplateOutlet="footer"></ng-container>
+    </ng-container>
+    <div id="onePopupLayer" class="popupLayer">
+      <div class="popupLayerHeader">
+        <h2></h2>
+        <div class="close">Close
+          <svg style="display:none;">
+            <use xlink:href="#x"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="popLayerMainContent"></div>
+      <div id="hiddenAjaxField" style="display:none;">
+        <div id="ajaxForms"></div>
+      </div>
+      <div id="subLayers"></div>
+    </div>
+    <div id="atcAtwLayer" class="popupLayer" data-selenium='addToCartWishlist'>
+      <div class="popupLayerHeader">
+        <h2></h2>
+        <div class="close">Close</div>
+      </div>
+      <div id="atcAtwLayerMainContent" class="popLayerMainContent"></div>
+      <div id="subLayers"></div>
+    </div>
+    <div id="atwAtwLayer" class="popupLayer" data-selenium='addToCartWishlist'>
+      <div class="popupLayerHeader WishListHeader">
+        <h2></h2>
+        <div class="close">Close</div>
+      </div>
+      <div id="atwAtwLayerMainContent" class="popLayerMainContent"></div>
+    </div>
+    <noscript>
+      <span id="noScriptLayer">
+        Please enable javascript for your best B&H experience.
+      </span>
+    </noscript>
+    <a id="hazScript" href="assets/images/weCanHazJS.gif" style="display:none;"></a>
+    <!--DFF (Affiliate program)-->
+    <script>
+      if (window.lazyLoad) {
+        lazyLoad.lazyRunJs(function () {
+          if (!window.$ || !$.cookie) return;
+          window.kbId = $.cookie("kbId");
+          $.removeCookie("kbId", {
+            domain: ".bhphotovideo.com",
+            path: "/"
+          })
+          if (window.kbId) {
+            lazyLoad.js("assets/FrameWork/js/referdetect.js");
+            $("<div/>", {
+              style: 'display:none',
+              id: 'div-kbid',
+              text: 'KBID=' + window.kbId
+            }).appendTo("body");
+          }
+        });
+      }
+    </script>
+    <!-- FetchBackOptOutPixel -->
+    <!-- TRACKING CODES -->
+  </div>
+  <div id="bh-portal"></div>
+  <script>
+    window.dlo = {
+      "search": {},
+      "user": {
+        "catalog": "B&H-Regular",
+        "isUsed": false,
+        "b2bCatalog": 2,
+        "isMobile": false,
+        "cartID": 15256039093,
+        "cartTotal": 0,
+        "isTaxExempt": false,
+        "ib": false
+      },
+      "product": {},
+      "loc": "home",
+      "portal": "MAIN"
+    };
+    window.__PRELOADED_DATA = {
+      "ConfigStore": {
+        "apiUrlBasePublic": "https://www.bhphotovideo.com",
+        "weblogicUrlBasePublic": "https://www.bhphotovideo.com",
+        "staticUrlBase": "static.bhphoto.com",
+        "thirdPartyKeys": {
+          "googleRecaptchaKey": "6Ldm2BcUAAAAAObtTSPxzHmvwldC1M-7v0j9gyj2",
+          "googleSocialLoginKey": "1086246549855-bs1rkfhinicn1kvbcfn0mojkdo43cs54.apps.googleusercontent.com",
+          "googleMapsApiKey": "AIzaSyD8dg0DdiA3Dyo1PObkZvf5x_45RTuOj1M",
+          "facebookSocialLoginKey": "722560704433361"
+        },
+        "clientLogDisplayLevel": 40,
+        "clientLogPassLevel": 40,
+        "ssrReqId": "73bc9bd4-91d6-45c2-974f-e4e36a4b1c20",
+        "watchdogTimeout": 20000,
+        "conditionallyEnableRoutesViaSSOE": false
+      },
+      "UserStore": {
+        "user": {
+          "phoneNumbers": {
+            "customerService": {
+              "local": "2122397765",
+              "tollFree": "8002215743"
+            },
+            "sales": {
+              "local": "2124446615",
+              "tollFree": "8006066969"
+            }
+          },
+          "catalog": {
+            "id": 2,
+            "name": "B&H-Regular",
+            "b2bCategory": null,
+            "logoUrl": "assets/images/hptagline.gif",
+            "rules": {
+              "logoSVGId": "bhlogo",
+              "showEDUbar": false,
+              "showGSAbar": false,
+              "hideHeaderMyAccount": false,
+              "hideHeaderCart": false,
+              "hideOtherSitesLink": false,
+              "hideHeaderCategories": false,
+              "hideDealZone": false,
+              "hideLiveChat": false,
+              "feedbackEmailAddresses": [],
+              "feedbackDefaultTopic": "websupport",
+              "hideAccessories": false,
+              "hideWishlist": false,
+              "hideTrackOrder": false,
+              "hideSearchBar": false,
+              "hideUsedLinks": false,
+              "hideTrending": false,
+              "hideTopCategoriesHomePage": false,
+              "hideBottomBannersHomePage": false,
+              "useHostedCatalogHomePage": false
+            }
+          },
+          "lastViewedCategoryPath": [],
+          "cart": {
+            "id": 15256039093,
+            "total": 0
+          },
+          "language": "en",
+          "currencyCode": "USD",
+          "currencySymbol": "$",
+          "countryCode": "US",
+          "isMobile": false,
+          "isBot": false,
+          "isUsedMode": false,
+          "isEduMode": false,
+          "requiresPrivacyStatement": false,
+          "customer": {
+            "firstName": "",
+            "lastName": "",
+            "gender": null,
+            "isTaxExempt": false,
+            "loggedIn": false,
+            "shippingProfile": {
+              "country": {
+                "code": null
+              }
+            },
+            "eduInfo": {
+              "isVerified": false,
+              "isEducator": false
+            },
+            "trackBrowsingHistory": true
+          },
+          "register": {
+            "autoCheckSignupForDealzoneEmails": true,
+            "autoCheckSignupForMarketingEmails": true
+          },
+          "dataLayer": {
+            "portal": "MAIN"
+          },
+          "showUSShippingBanner": true,
+          "affiliatePixel": null
+        }
+      },
+      "PlatformStore": {
+        "platform": {
+          "type": "desktop"
+        }
+      },
+      "CmsStore": {
+        "cms": {
+          "status": 2,
+          "data": {
+            "notes": null,
+            "banners": [{
+              "type": "HTML",
+              "rule": "STANDARD",
+              "slot": "HERO",
+              "trackingDescription": null,
+              "body": "<a class=\"banner home-banner A60609NikonTradeIn082531\" href=\"/c/promotion/15549/nikon-trade-in.html\" data-banner-name=\"60609 Nikon Trade In 082531\" alt=\"\" title=\"Cash In\">\n\t<div class=\"banner-inner\">\n\t\t<div class=\"banner-words\"></div>\n\t</div>\n</a>",
+              "style": ".bx-viewport {\n    height:430px !important;\n}\n\n.js-htmlbanner:not(.banner-oldh) {height: 430px;overflow: hidden;}\n\n.home-banner {position: relative;display: block;width: 100%;min-width: 960px;max-width:2000px;margin-left:auto;margin-right:auto;height: 430px;background-size: cover;background-repeat: no-repeat;background-position: center;z-index: 50;}\n.banner-inner {max-width: 1350px;width: auto;height: 100%;margin: 0 auto;padding: 0 10px;}\n.banner-words {position: relative;z-index: 51;display: block;width: 100%;height: 100%;background-position: center;background-repeat: no-repeat;background-size: cover;}\n.banner-welcome {height: 0 !important;transition-duration: 0ms !important;overflow: hidden !important;margin-bottom:-53px!important}\n.banner-oldh .home-banner {height: 200px;}\n.banner-oldh .banner-words {height: 91%;}\n@media screen and (min-width: 2000px){\n    .home-banner {margin-bottom: -100px;}\n}\n\n.home-banner.A60609NikonTradeIn082531 {\n    background-image: url(assets/bimages/60508-nikon-trade-in-home-banner-bg.jpg);\n    max-width: 100%;\n}\n.A60609NikonTradeIn082531 .banner-words {\n    background-image: url(assets/bimages/60508-nikon-trade-in-home-banner-txt.png);\n}\n\n.home-banner.A60609NikonTradeIn082531:before {\n    content: \"\";\n    position:absolute;\n    width: 100%;\n    height: 100%;\n    left: 0;\n    background: rgba(0,0,0,0.3);\n    opacity: 0;\n    transition: all .5s;\n    z-index: 50;\n}\n\n.A60609NikonTradeIn082531:hover:before {\n    opacity: 1;\n}\n\n@media screen and (min-width: 2000px){\n    .home-banner.BriefHistoryOfBhBanner3 {\n        background-size: cover;\n    }\n}",
+              "linkUrl": null,
+              "openLinkInSlideInTray": false
+            }, {
+              "type": "HTML",
+              "rule": "STANDARD",
+              "slot": "HERO",
+              "trackingDescription": null,
+              "body": "<div class=\"banner home-banner A60443DJIOsmoMobile3\"  data-banner-name=\"60443 DJI Osmo Mobile 3\">\n\t<div class=\"banner-inner\" style=\"text-align: center;\">\n\t\t<div class=\"banner-words\">\n\n<img src=\"assets/bimages/60443_DJI_hero.png\" usemap=\"#A60443DJIOsmoMobile3-map\">\n\n<map name=\"A60443DJIOsmoMobile3-map\">\n    <area target=\"\" alt=\"Learn More\" title=\"Learn More\" href=\"https://www.bhphotovideo.com/explora/video/news/the-dji-osmo-mobile-3-is-a-smartphone-gimbal\" coords=\"535,195,722,277\" shape=\"rect\">\n    <area target=\"\" alt=\"Get Yours\" title=\"Get Yours\" href=\"https://www.bhphotovideo.com/c/product/1497924-REG/dji_cp_os_00000022_01_osmo_mobile_3_smartphone.html\" coords=\"725,196,912,273\" shape=\"rect\">\n</map>\n\n</div>\n       </div>\n</div>",
+              "style": "bx-viewport {\n    height:430px !important;\n}\n\n.js-htmlbanner:not(.banner-oldh) {height: 430px;overflow: hidden;}\n\n.home-banner {position: relative;display: block;width: 100%;min-width: 960px;max-width:2000px;margin-left:auto;margin-right:auto;height: 430px;background-size: cover;background-repeat: no-repeat;background-position: center;z-index: 50;}\n.banner-inner {max-width: 1350px;width: auto;height: 100%;margin: 0 auto;padding: 0 10px;}\n.banner-words {position: relative;z-index: 51;display: block;width: 100%;height: 100%;background-position: center;background-repeat: no-repeat;background-size: cover;}\n.banner-welcome {height: 0 !important;transition-duration: 0ms !important;overflow: hidden !important;margin-bottom:-53px!important}\n.banner-oldh .home-banner {height: 200px;}\n.banner-oldh .banner-words {height: 91%;}\n@media screen and (min-width: 2000px){\n    .home-banner {margin-bottom: -100px;}\n}\n\n.home-banner.A60443DJIOsmoMobile3 {\n    background-image: url(assets/bimages/60443_DJI_hero.jpg);\n    max-width: 100%;\n}\n\n.home-banner.A60443DJIOsmoMobile3:before {\n    content: \"\";\n    position:absolute;\n    width: 100%;\n    height: 100%;\n    left: 0;\n    background: rgba(5, 5, 5,0.0);\n    opacity: 0;\n    transition: all .5s;\n    z-index: 50;\n}\n\n.A60443DJIOsmoMobile3 :hover:before {\n    opacity: 1;\n}\n\n@media screen and (min-width: 2000px){\n    .home-banner.A60443DJIOsmoMobile3 {\n        background-size: cover;\n    }\n}\n.slick-slide img{margin:auto}",
+              "linkUrl": null,
+              "openLinkInSlideInTray": false
+            }, {
+              "type": "HTML",
+              "rule": "STANDARD",
+              "slot": "HERO",
+              "trackingDescription": null,
+              "body": "<a class=\"banner home-banner A59736Panasonic08190825\" href=\"/explora/bh-photography-podcast-panasonic-lumix-s1-sweepstakes\" alt=\"See Details\" title=\"See Details\" data-banner-name=\"59736 Panasonic 08190825\">\n\t<div class=\"banner-inner\">\n\t\t<div class=\"banner-words\"></div>\n\t</div>\n</a>",
+              "style": ".bx-viewport {\n    height:430px !important;\n}\n\n.js-htmlbanner:not(.banner-oldh) {height: 430px;overflow: hidden;}\n\n.home-banner {position: relative;display: block;width: 100%;min-width: 960px;max-width:2000px;margin-left:auto;margin-right:auto;height: 430px;background-size: cover;background-repeat: no-repeat;background-position: center;z-index: 50;}\n.banner-inner {max-width: 1350px;width: auto;height: 100%;margin: 0 auto;padding: 0 10px;}\n.banner-words {position: relative;z-index: 51;display: block;width: 100%;height: 100%;background-position: center;background-repeat: no-repeat;background-size: cover;}\n.banner-welcome {height: 0 !important;transition-duration: 0ms !important;overflow: hidden !important;margin-bottom:-53px!important}\n.banner-oldh .home-banner {height: 200px;}\n.banner-oldh .banner-words {height: 91%;}\n@media screen and (min-width: 2000px){\n    .home-banner {margin-bottom: -100px;}\n}\n.home-banner.A59736Panasonic08190825 {\n    background-image: url(assets/bimages/59736_Panasonic_hero.jpg);\n    max-width: 100%;\n}\n.A59736Panasonic08190825 .banner-words {\n    background-image: url(assets/bimages/59736_Panasonic_hero.png);\n}\n\n.home-banner.A59736Panasonic08190825:before {\n    content: \"\";\n    position:absolute;\n    width: 100%;\n    height: 100%;\n    left: 0;\n    background: rgba(0,0,0,0.0);\n    opacity: 0;\n    transition: all .5s;\n    z-index: 50;\n}\n\n.A59736Panasonic08190825:hover:before {\n    opacity: 1;\n}\n\n@media screen and (min-width: 2000px){\n    .home-banner.A59736Panasonic08190825 {\n        background-size: cover;\n    }\n}\n.slick-slide img{margin:auto}",
+              "linkUrl": null,
+              "openLinkInSlideInTray": false
+            }, {
+              "type": "HTML",
+              "rule": "STANDARD",
+              "slot": "HERO",
+              "trackingDescription": null,
+              "body": "<a class=\"banner home-banner HomepageBannerSaveTheTax\" href=\"/credit-cards\" data-banner-name=\"Homepage Banner Save the Tax\" alt=\"\" title=\"\">\n\t<div class=\"banner-inner\">\n\t\t<div class=\"banner-words\"></div>\n\t</div>\n</a>",
+              "style": "<style type=\"text/css\">\n.bx-viewport {\n    height:430px !important;\n}\n\n.js-htmlbanner:not(.banner-oldh) {height: 430px;overflow: hidden;}\n\n.home-banner {position: relative;display: block;width: 100%;min-width: 960px;max-width:2000px;margin-left:auto;margin-right:auto;height: 430px;background-size: cover;background-repeat: no-repeat;background-position: center;z-index: 50;}\n.banner-inner {max-width: 1350px;width: auto;height: 100%;margin: 0 auto;padding: 0 10px;}\n.banner-words {position: relative;z-index: 51;display: block;width: 100%;height: 100%;background-position: center;background-repeat: no-repeat;background-size: cover;}\n.banner-welcome {height: 0 !important;transition-duration: 0ms !important;overflow: hidden!important;margin-bottom:-53px!important;}\n.banner-oldh .home-banner {height: 200px;}\n.banner-oldh .banner-words {height: 91%;}\n@media screen and (min-width: 2000px){\n    .home-banner {margin-bottom: -100px;}\n}\n\n.home-banner.HomepageBannerSaveTheTax {\n    background-image: url(assets/images/PLCC/BHBC/BHCC_Homepage_Payboo_bg.jpg);\n    max-width: 100%;\n}\n.HomepageBannerSaveTheTax .banner-words {\n    background-image: url(assets/images/PLCC/BHBC/BHCC_Homepage_Payboo_SaveTheTax_text.png);\n}\n\n.home-banner.HomepageBannerSaveTheTax:before {\n    content: \"\";\n    position:absolute;\n    width: 100%;\n    height: 100%;\n    left: 0;\n    background: rgba(0,0,0,0.2);\n    opacity: 0;\n    transition: all .5s;\n    z-index: 50;\n}\n\n.HomepageBannerSaveTheTax:hover:before {\n    opacity: 1;\n}\n\n@media screen and (min-width: 2000px){\n    .home-banner.HomepageBannerSaveTheTax {\n        background-size: cover;\n    }\n}\n</style>",
+              "linkUrl": null,
+              "openLinkInSlideInTray": false
+            }, {
+              "type": "HTML",
+              "rule": "STANDARD",
+              "slot": "HERO",
+              "trackingDescription": null,
+              "body": "<a class=\"banner home-banner BriefHistoryOfBhBanner3\" href=\"/l/who-we-are\" data-banner-name=\"Brief History of B&H Banner 3 2019\" alt=\"\" title=\"GET TO KNOW US\">\n\t<div class=\"banner-inner\">\n\t\t<div class=\"banner-words\"></div>\n\t</div>\n</a>",
+              "style": ".bx-viewport {\n    height:430px !important;\n}\n\n.js-htmlbanner:not(.banner-oldh) {height: 430px;overflow: hidden;}\n\n.home-banner {position: relative;display: block;width: 100%;min-width: 960px;max-width:2000px;margin-left:auto;margin-right:auto;height: 430px;background-size: cover;background-repeat: no-repeat;background-position: center;z-index: 50;}\n.banner-inner {max-width: 1350px;width: auto;height: 100%;margin: 0 auto;padding: 0 10px;}\n.banner-words {position: relative;z-index: 51;display: block;width: 100%;height: 100%;background-position: center;background-repeat: no-repeat;background-size: cover;}\n.banner-welcome {height: 0 !important;transition-duration: 0ms !important;overflow: hidden !important;margin-bottom:-53px!important}\n.banner-oldh .home-banner {height: 200px;}\n.banner-oldh .banner-words {height: 91%;}\n@media screen and (min-width: 2000px){\n    .home-banner {margin-bottom: -100px;}\n}\n\n.home-banner.BriefHistoryOfBhBanner3 {\n    background-image: url(assets/bimages/50064_BH_Brief_History_hero_vC.jpg);\n    max-width: 100%;\n}\n.BriefHistoryOfBhBanner3 .banner-words {\n    background-image: url(assets/bimages/50064_BH_Brief_History_hero_vC.png);\n}\n\n.home-banner.BriefHistoryOfBhBanner3:before {\n    content: \"\";\n    position:absolute;\n    width: 100%;\n    height: 100%;\n    left: 0;\n    background: rgba(0,0,0,0.3);\n    opacity: 0;\n    transition: all .5s;\n    z-index: 50;\n}\n\n.BriefHistoryOfBhBanner3:hover:before {\n    opacity: 1;\n}\n\n@media screen and (min-width: 2000px){\n    .home-banner.BriefHistoryOfBhBanner3 {\n        background-size: cover;\n    }\n}",
+              "linkUrl": null,
+              "openLinkInSlideInTray": false
+            }, {
+              "type": "HTML",
+              "rule": "STANDARD",
+              "slot": "HERO",
+              "trackingDescription": null,
+              "body": "<a class=\"banner home-banner TechCorner\" href=\"https://www.bhphotovideo.comfind/shared/visit-the-tech-corner.js\" data-banner-name=\"TechCorner\" alt=\"Learn More\" title=\"Learn More\">\n\t<div class=\"banner-inner\">\n\t\t<div class=\"banner-words\"></div>\n\t</div>\n</a>",
+              "style": ".bx-viewport {\n    height:430px !important;\n}\n\n.js-htmlbanner:not(.banner-oldh) {height: 430px;overflow: hidden;}\n\n.home-banner {position: relative;display: block;width: 100%;min-width: 960px;max-width:2000px;margin-left:auto;margin-right:auto;height: 430px;background-size: cover;background-repeat: no-repeat;background-position: center;z-index: 50;}\n.banner-inner {max-width: 1350px;width: auto;height: 100%;margin: 0 auto;padding: 0 10px;}\n.banner-words {position: relative;z-index: 51;display: block;width: 100%;height: 100%;background-position: center;background-repeat: no-repeat;background-size: cover;}\n.banner-welcome {height: 0 !important;transition-duration: 0ms !important;overflow: hidden !important;margin-bottom:-53px!important}\n.banner-oldh .home-banner {height: 200px;}\n.banner-oldh .banner-words {height: 91%;}\n@media screen and (min-width: 2000px){\n    .home-banner {margin-bottom: -100px;}\n}\n\n.home-banner.TechCorner {\n    background-image: url(assets/bimages/52242_Tech_Corner_hero_A.jpg);\n    max-width: 100%;\n}\n.TechCorner .banner-words {\n    background-image: url(assets/bimages/52242_Tech_Corner_hero_A.png);\n}\n\n.home-banner.TechCorner:before {\n    content: \"\";\n    position:absolute;\n    width: 100%;\n    height: 100%;\n    left: 0;\n    background: rgba(0,0,0,0.0);\n    opacity: 0;\n    transition: all .5s;\n    z-index: 50;\n}\n\n.TechCorner:hover:before {\n    opacity: 1;\n}\n\n@media screen and (min-width: 2000px){\n    .home-banner.TechCorner {\n        background-size: cover;\n    }\n}",
+              "linkUrl": "find/shared/visit-the-tech-corner.js",
+              "openLinkInSlideInTray": false
+            }],
+            "departmentClosed": null,
+            "extendedReturns": null
+          }
+        },
+        "activeConfig": {
+          "app": "WEB_DESKTOP",
+          "page": "HOME"
+        }
+      },
+      "CompanyStore": {
+        "company": {
+          "status": 2,
+          "data": {
+            "isStoreOpenNow": false,
+            "storeSchedule": {
+              "openingTime": 1566741600000,
+              "closingTime": 1566770400000
+            },
+            "storePickupSchedule": {
+              "availableNow": false,
+              "today": {
+                "openingTime": 1566741600000,
+                "closingTime": 1566770400000
+              },
+              "nextAvailable": {
+                "openingTime": 1566741600000,
+                "closingTime": 1566770400000
+              }
+            },
+            "storePickupTime": 30,
+            "nextWebsiteClosing": {
+              "closingTime": 1567207838000,
+              "reopeningTime": 1567298702000
+            }
+          }
+        }
+      },
+      "LanguageStore": {
+        "language": {
+          "locale": "en"
+        }
+      }
+    };
+    window.__SERVER_RENDER_TIME = 1566785855576;
+  </script>
+  <script>
+    (function () {
+      var appendScript = function (url, cb) {
+        var h = document.getElementsByTagName("head")[0],
+          d = false,
+          s = document.createElement("script");
+        s.src = url;
+        s.onload = s.onreadystatechange = function () {
+          if (!d && (!this.readyState || this.readyState == "loaded" || this.readyState == "complete")) {
+            d = true;
+            if (typeof cb === "function") {
+              cb();
+            }
+          }
+        };
+        h.appendChild(s);
+      };
+      var onLoad = function (cb) {
+        if (document.readyState == "complete") {
+          cb();
+        } else {
+          if (window.addEventListener) window.addEventListener("load", cb, false);
+          else window.attachEvent("onload", cb);
+        }
+      };
+      var loader = {
+        lazyJs: function (url, cb) {
+          onLoad(function () {
+            appendScript(url, cb);
+          });
+        },
+        lazyRunJs: function (func) {
+          onLoad(func);
+        },
+      };
+      window.loader = loader;
+    })();
+  </script>
+  <script>
+    [
+      // "assets/aperture/es5/desktop/en/scripts/vendor.1614bc225ad3fdde6ebc.chunk.js"
+      // , "assets/aperture/es5/desktop/en/scripts/app.8b21cd136fb4324322cf.js"
+      // , "assets/aperture/es5/desktop/en/scripts/icons.e1a878ce44014b5b77a0.chunk.js"
+      // , "assets/aperture/es5/desktop/en/scripts/home_product.4048b56f96ea16e642d9.chunk.js"
+      // , "assets/bhfoto/Bootstrap.js"
+      // , "assets/aperture/shared/forter.js", 
+      // "assets/aperture/shared/dataLayer.js"
+      // , "assets/find/javascripts.js"
+    ].forEach(function (script) {
+      window.loader.lazyJs(script);
+    });
+  </script>
+  
+  
+  <!-- FOOTER -->
+  <ng-template #footer>
+      <footer class="footer OpenSans-600-normal  ">
+		
+	
+			
+	
+          <div class="footer-inner footer-contact-info clearfix " data-selenium="footerContact">
+            <div class="upper inlineBlock">
+              <span class="fs14 c37 OpenSans-300-normal">Sales &amp; Expert advice</span>
+              <br>
+              <span class="fs30 c38 OpenSans-600-normal">800.606.6969</span>
+              
+                <br>
+                <span class="fs16 OpenSans-300-normal"><span class="c35 lower">or</span> 212.444.6615</span>
+              
+            </div>
+            <div class="upper inlineBlock" data-selenium="footerContactUs">
+              <div class="fs26 OpenSans-600-normal clearfix">
+                <a class="c38 inlineBlock" href="https://www.bhphotovideo.com/find/contactForm.jsp" data-selenium="contactUs" target="_self">
+                  <svg style="width:35px;height:26px;" class="left"><use xlink:href="#envelope-light"></use></svg><span class="left">Contact Us</span>
+                </a>
+              </div>
+            </div>
+            
+              <div class="upper inlineBlock" data-selenium="footerLiveCh">
+                <div class="fs26 OpenSans-600-normal clearfix">
+                  <a class="c38 inlineBlock" href="https://www.bhphotovideo.com/find/liveChat.jsp" data-selenium="liveChat" onclick="window.open(this.href, this.target, 'height=353,width=553,resizable=yes,scrollbars=yes');" target="livechat">
+                    <svg style="width:36px;height:31px;" class="left"><use xlink:href="#chat-square"></use></svg><span class="c38 left">Live Chat</span>
+                  </a>	
+                </div>
+              </div>
+            
+            <div class="upper inlineBlock">
+              <span class="fs14 c37 OpenSans-300-normal">Customer Service</span>
+              <br>
+              
+                <span class="fs30 c38 OpenSans-600-normal">800.221.5743</span>
+                <br>
+                <span class="fs16 OpenSans-300-normal"><span class="c35 lower">or</span> 212.239.7765</span>
+              
+              
+            </div>
+          </div>
+          <div class="footer-customer-informaion" data-selenium="footerCustI">
+          <div class="footer-inner">
+            <div class="footer-customer-informaion-top clearfix">
+              <div class="left">
+                <a class="noUnderline c36" href="https://www.bhphotovideo.com/find/HelpCenter/Shipping.jsp" name="Footer-Help-Shipping" data-selenium="shippingHelp" target="_self">
+                  <span class="fs24 OpenSans-700-normal c36 upper">Shipping</span><br><br><span class="fs14 OpenSans-300-normal">Free Expedited Shipping<br> for most orders over $49</span>
+                </a>
+              </div>
+              <div class="left">
+                <a class="noUnderline c36" href="https://www.bhphotovideo.com/find/HelpCenter/ReturnExchange.jsp" name="Footer-Help-Return_and_Exchange" data-selenium="returnExchange" target="_self">
+                  <span class="fs24 OpenSans-700-normal c36 upper">Returns</span><br><br><span class="fs14 OpenSans-300-normal">Shop With Confidence<br> Easy 30-Day Return Policy</span>
+                </a>
+              </div>
+              <div class="left">
+                <a class="noUnderline c36" href="https://www.bhphotovideo.com/find/giftCard.jsp" name="Footer-Resources-Gift Card" data-selenium="resourceGiftCard" target="_self">
+                  <span class="fs24 OpenSans-700-normal c36 upper">Gift Cards</span><br><br><span class="fs14 OpenSans-300-normal">The Gift that<br> Never Expires</span>
+                </a>
+              </div>
+              <div class="left">
+                <a class="noUnderline c36" href="https://www.bhphotovideo.com/find/EventSpace.jsp" name="Footer-Company Information-The_Event_Space" data-selenium="eventSpace" target="_self" rel="nofollow">
+                  <span class="fs24 OpenSans-700-normal c36 upper">Event Space</span><br><br><span class="fs14 OpenSans-300-normal">Expert B&amp;H Events<br> and Presentations</span>
+                </a>
+              </div>
+                <div class="left">
+                  <span class="fs24 OpenSans-700-normal c36 upper">Language</span>
+                  <br><br>
+                  <div class="langSelect ns-select ns-close OpenSans-300-normal" data-selenium="langSelect" tabindex="0" style="display: inline-block; cursor: default; position: relative;">
+                    <p class="fs14 c36 ns-selected-text ns-selected-option cursor-pointer" style="margin: 0px; display: inline-block;">
+                      
+                        
+                        English
+                      
+                    <svg style="width:10px;height:5px;"><use xlink:href="#arrow-down-light"></use></svg></p>
+                    
+                    <ul class="ns-dropdown fs14 c36 switch-language" style="list-style: outside none none; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; display: none; position: absolute; z-index: 11111;">
+                      
+                        <li class="ns-option js-switch-language last first" data-language="S" name="Footer-changeLanguage-toSpanish" data-selenium="languageOptionSp" style="list-style: outside none none;">
+                          Spanish
+                        </li>
+                      
+                      
+                    </ul>
+                  </div>
+                </div>
+                <div class="left">
+                <span class="fs24 OpenSans-700-normal c36 upper">currency</span>
+                <br><br>
+                <div class="fs14 currencySelect ns-select ns-close OpenSans-300-normal" tabindex="0" data-selenium="currencySelect" style="display: inline-block; cursor: default; position: relative;">
+                  <p class="ns-selected-text ns-selected-option cursor-pointer" style="margin: 0px; display: inline-block;">
+                    <a href="#" data-selenium="currencyLink" onclick="return false;" class="c36 noUnderline USD">US Dollar</a>
+                  <svg style="width:10px;height:5px;"><use xlink:href="#arrow-down-light"></use></svg></p>
+                  <ul class="ns-dropdown" style="list-style: outside none none; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; display: none; position: absolute; z-index: 11111;" data-selenium="currencyDropDownul">
+                    
+                      <li data-selenium="currncyOption" class="ns-option  ns-selected first" style="list-style: outside none none;">
+                        <a data-selenium="currencyDropdown" href="https://www.bhphotovideo.com/bnh/controller/home?O=getpage.jsp&amp;A=SetCurrency&amp;Q=&amp;saveCUR=Y&amp;code=USD" class="c36 noUnderline  USD">
+                          US Dollar
+                        </a>
+                      </li>
+                    
+                      <li data-selenium="currncyOption" class="ns-option" style="list-style: outside none none;">
+                        <a data-selenium="currencyDropdown" href="https://www.bhphotovideo.com/bnh/controller/home?O=getpage.jsp&amp;A=SetCurrency&amp;Q=&amp;saveCUR=Y&amp;code=AUD" class="c36 noUnderline  AUD">
+                          Australian Dollar
+                        </a>
+                      </li>
+                    
+                      <li data-selenium="currncyOption" class="ns-option" style="list-style: outside none none;">
+                        <a data-selenium="currencyDropdown" href="https://www.bhphotovideo.com/bnh/controller/home?O=getpage.jsp&amp;A=SetCurrency&amp;Q=&amp;saveCUR=Y&amp;code=BRL" class="c36 noUnderline  BRL">
+                          Brazilian Real
+                        </a>
+                      </li>
+                    
+                      <li data-selenium="currncyOption" class="ns-option" style="list-style: outside none none;">
+                        <a data-selenium="currencyDropdown" href="https://www.bhphotovideo.com/bnh/controller/home?O=getpage.jsp&amp;A=SetCurrency&amp;Q=&amp;saveCUR=Y&amp;code=GBP" class="c36 noUnderline  GBP">
+                          British Pound
+                        </a>
+                      </li>
+                    
+                      <li data-selenium="currncyOption" class="ns-option" style="list-style: outside none none;">
+                        <a data-selenium="currencyDropdown" href="https://www.bhphotovideo.com/bnh/controller/home?O=getpage.jsp&amp;A=SetCurrency&amp;Q=&amp;saveCUR=Y&amp;code=CAD" class="c36 noUnderline  CAD">
+                          Canadian Dollar
+                        </a>
+                      </li>
+                    
+                      <li data-selenium="currncyOption" class="ns-option" style="list-style: outside none none;">
+                        <a data-selenium="currencyDropdown" href="https://www.bhphotovideo.com/bnh/controller/home?O=getpage.jsp&amp;A=SetCurrency&amp;Q=&amp;saveCUR=Y&amp;code=CLP" class="c36 noUnderline  CLP">
+                          Chilean Peso
+                        </a>
+                      </li>
+                    
+                      <li data-selenium="currncyOption" class="ns-option" style="list-style: outside none none;">
+                        <a data-selenium="currencyDropdown" href="https://www.bhphotovideo.com/bnh/controller/home?O=getpage.jsp&amp;A=SetCurrency&amp;Q=&amp;saveCUR=Y&amp;code=CNY" class="c36 noUnderline  CNY">
+                          Chinese Yuan
+                        </a>
+                      </li>
+                    
+                      <li data-selenium="currncyOption" class="ns-option" style="list-style: outside none none;">
+                        <a data-selenium="currencyDropdown" href="https://www.bhphotovideo.com/bnh/controller/home?O=getpage.jsp&amp;A=SetCurrency&amp;Q=&amp;saveCUR=Y&amp;code=COP" class="c36 noUnderline  COP">
+                          Colombian Peso
+                        </a>
+                      </li>
+                    
+                      <li data-selenium="currncyOption" class="ns-option" style="list-style: outside none none;">
+                        <a data-selenium="currencyDropdown" href="https://www.bhphotovideo.com/bnh/controller/home?O=getpage.jsp&amp;A=SetCurrency&amp;Q=&amp;saveCUR=Y&amp;code=EUR" class="c36 noUnderline  EUR">
+                          Euro
+                        </a>
+                      </li>
+                    
+                      <li data-selenium="currncyOption" class="ns-option" style="list-style: outside none none;">
+                        <a data-selenium="currencyDropdown" href="https://www.bhphotovideo.com/bnh/controller/home?O=getpage.jsp&amp;A=SetCurrency&amp;Q=&amp;saveCUR=Y&amp;code=HKD" class="c36 noUnderline  HKD">
+                          Hong Kong Dollar
+                        </a>
+                      </li>
+                    
+                      <li data-selenium="currncyOption" class="ns-option" style="list-style: outside none none;">
+                        <a data-selenium="currencyDropdown" href="https://www.bhphotovideo.com/bnh/controller/home?O=getpage.jsp&amp;A=SetCurrency&amp;Q=&amp;saveCUR=Y&amp;code=INR" class="c36 noUnderline  INR">
+                          Indian Rupee
+                        </a>
+                      </li>
+                    
+                      <li data-selenium="currncyOption" class="ns-option" style="list-style: outside none none;">
+                        <a data-selenium="currencyDropdown" href="https://www.bhphotovideo.com/bnh/controller/home?O=getpage.jsp&amp;A=SetCurrency&amp;Q=&amp;saveCUR=Y&amp;code=ILS" class="c36 noUnderline  ILS">
+                          Israeli Shekel
+                        </a>
+                      </li>
+                    
+                      <li data-selenium="currncyOption" class="ns-option" style="list-style: outside none none;">
+                        <a data-selenium="currencyDropdown" href="https://www.bhphotovideo.com/bnh/controller/home?O=getpage.jsp&amp;A=SetCurrency&amp;Q=&amp;saveCUR=Y&amp;code=JPY" class="c36 noUnderline  JPY">
+                          Japanese Yen
+                        </a>
+                      </li>
+                    
+                      <li data-selenium="currncyOption" class="ns-option" style="list-style: outside none none;">
+                        <a data-selenium="currencyDropdown" href="https://www.bhphotovideo.com/bnh/controller/home?O=getpage.jsp&amp;A=SetCurrency&amp;Q=&amp;saveCUR=Y&amp;code=MXN" class="c36 noUnderline  MXN">
+                          Mexican Peso
+                        </a>
+                      </li>
+                    
+                      <li data-selenium="currncyOption" class="ns-option" style="list-style: outside none none;">
+                        <a data-selenium="currencyDropdown" href="https://www.bhphotovideo.com/bnh/controller/home?O=getpage.jsp&amp;A=SetCurrency&amp;Q=&amp;saveCUR=Y&amp;code=NZD" class="c36 noUnderline  NZD">
+                          NZ Dollar
+                        </a>
+                      </li>
+                    
+                      <li data-selenium="currncyOption" class="ns-option" style="list-style: outside none none;">
+                        <a data-selenium="currencyDropdown" href="https://www.bhphotovideo.com/bnh/controller/home?O=getpage.jsp&amp;A=SetCurrency&amp;Q=&amp;saveCUR=Y&amp;code=NOK" class="c36 noUnderline  NOK">
+                          Norwegian Krone
+                        </a>
+                      </li>
+                    
+                      <li data-selenium="currncyOption" class="ns-option" style="list-style: outside none none;">
+                        <a data-selenium="currencyDropdown" href="https://www.bhphotovideo.com/bnh/controller/home?O=getpage.jsp&amp;A=SetCurrency&amp;Q=&amp;saveCUR=Y&amp;code=SGD" class="c36 noUnderline  SGD">
+                          Singapore Dollar
+                        </a>
+                      </li>
+                    
+                      <li data-selenium="currncyOption" class="ns-option" style="list-style: outside none none;">
+                        <a data-selenium="currencyDropdown" href="https://www.bhphotovideo.com/bnh/controller/home?O=getpage.jsp&amp;A=SetCurrency&amp;Q=&amp;saveCUR=Y&amp;code=KRW" class="c36 noUnderline  KRW">
+                          South Korean Won
+                        </a>
+                      </li>
+                    
+                      <li data-selenium="currncyOption" class="ns-option" style="list-style: outside none none;">
+                        <a data-selenium="currencyDropdown" href="https://www.bhphotovideo.com/bnh/controller/home?O=getpage.jsp&amp;A=SetCurrency&amp;Q=&amp;saveCUR=Y&amp;code=SEK" class="c36 noUnderline  SEK">
+                          Swedish Krona
+                        </a>
+                      </li>
+                    
+                      <li data-selenium="currncyOption" class="ns-option last" style="list-style: outside none none;">
+                        <a data-selenium="currencyDropdown" href="https://www.bhphotovideo.com/bnh/controller/home?O=getpage.jsp&amp;A=SetCurrency&amp;Q=&amp;saveCUR=Y&amp;code=CHF" class="c36 noUnderline  CHF">
+                          Swiss Franc
+                        </a>
+                      </li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <div class="footer-customer-informaion-bottom" data-selenium="custInfo">
+              <div class="left">
+                <h4 class="fs20 c38">Help</h4>
+                
+                <a class="fs16 c36 noUnderline OpenSans-300-normal" href="https://www.bhphotovideo.com/bnh/controller/home?O=ReturnExchange&amp;A=orderHistory&amp;Q=orderHistory" name="Footer-Help-Track_Order" data-selenium="trackOrder" target="_self">Track/Request a Return</a>
+                <a class="fs16 c36 noUnderline OpenSans-300-normal" href="https://www.bhphotovideo.com/find/unsubscribeCatalogs.jsp" name="Footer-Help-Catalog_Unsubscribe" data-selenium="unsuscribeCat" target="_self">Unsubscribe from Catalog</a>
+                <a class="fs16 c36 noUnderline OpenSans-300-normal" href="https://www.bhphotovideo.com/find/newsletterEmailRequest.jsp/unsubscribe/Y" name="Footer-Help-Email_Unsubscribe" data-selenium="unsuscribeEmail" target="_self">Unsubscribe from Email</a>
+                <a class="fs16 c36 noUnderline OpenSans-300-normal" href="https://www.bhphotovideo.com/find/HelpCenter/Payments.jsp" name="Footer-Help-Payments" data-selenium="paymentsHelp" target="_self">Payments</a>
+                <a class="fs16 c36 noUnderline OpenSans-300-normal" href="https://www.bhphotovideo.com/find/HelpCenter/helpcenter.jsp" name="Footer-Help-More_Help" data-selenium="moreHelp" target="_self">All Help Topics</a>
+              </div>
+              <div class="left">
+                <h4 class="fs20 c38">International</h4>
+                <a class="fs16 c36 noUnderline OpenSans-300-normal" href="https://www.bhphotovideo.com/find/HelpCenter/International.jsp#whereWeShip" name="Footer-Why-Worldwide Business" target="worldwidebuisness" data-selenium="intlShippingRules">Worldwide Shipping</a>
+                <a class="fs16 c36 noUnderline OpenSans-300-normal" href="https://www.bhphotovideo.com/find/HelpCenter/Payments.jsp#paymentOptions" name="Footer-International-Payments" data-selenium="intlPayments" target="_self">Payment Options</a>
+                <a class="fs16 c36 noUnderline OpenSans-300-normal" href="https://www.bhphotovideo.com/find/HelpCenter/International.jsp#dutiesTaxes" name="Footer-International-Customs" data-selenium="intlCustoms" target="_self">Customs and VAT</a>
+                
+              </div>
+              <div class="left">
+                <h4 class="fs20 c38">Company Information</h4>
+                <a class="fs16 c36 noUnderline OpenSans-300-normal" href="https://www.bhphotovideo.com/find/HelpCenter/AboutUs.jsp" name="Footer-Company Information-About_Us" data-selenium="aboutUs" target="_self">About Us</a>
+                <a class="fs16 c36 noUnderline OpenSans-300-normal" href="https://www.bhphotovideo.com/find/EventSpace.jsp" name="Footer-Company Information-The_Event_Space" data-selenium="eventSpace" target="_self">The Event Space</a>
+                <a class="fs16 c36 noUnderline OpenSans-300-normal" href="https://www.bhphotovideo.com/find/Events.jsp" name="Footer-Company Information-Events" data-selenium="infoEvents" target="_self">National Workshops</a>
+                <a class="fs16 c36 noUnderline OpenSans-300-normal" href="https://www.bhphotovideo.com/find/certifications.jsp" name="Footer-Company Information-Online_Awards" data-selenium="onlineAwards" target="_self">Reviews &amp; Awards</a>
+                <a class="fs16 c36 noUnderline OpenSans-300-normal" href="https://www.bhphotovideo.com/find/affiliates.jsp" name="Footer-Company Information-Affiliates" data-selenium="infoAffiliates" target="_self">Affiliate Program</a>
+                <a class="fs16 c36 noUnderline OpenSans-300-normal" href="https://www.bhphotovideo.com/find/HelpCenter/Supplier_Diversity_Program.jsp" name="Footer-Company Supplier-Diversity-Program" data-selenium="Supplier_Diversity_Program" target="_self">Supplier Diversity Program</a>
+                <a class="fs16 c36 noUnderline OpenSans-300-normal" href="/careers/index.htm" name="Footer-Company Information-Career_Opportunities" data-selenium="careerOpportunities" target="_self">Career Opportunities</a>
+              </div>
+              <div class="left">
+                <h4 class="fs20 c38">B&amp;H Resources</h4>
+                <a class="fs16 c36 noUnderline OpenSans-300-normal" href="https://www.bhphotovideo.com/find/shopByBrand.jsp" name="Footer-Resources-Shop by Brand" data-selenium="shopByBrand" target="_self">Shop By Brand</a>
+                <a class="fs16 c36 noUnderline OpenSans-300-normal" href="https://www.bhphotovideo.com/find/HelpCenter/Policies.jsp#warranties" name="Footer-Resources-Manufacturers_Directory" data-selenium="manufacterDirectory" target="_self">Manufacturers Directory</a>
+                <a class="fs16 c36 noUnderline OpenSans-300-normal" href="https://www.bhphotovideo.com/find/FreeCatalog.jsp" name="Footer-Resources-B&amp;H_Sourcebooks_Catalogs" data-selenium="sourceBookCatalog" target="_self">Sourcebooks &amp; Catalogs</a>
+                  <a class="fs16 c36 noUnderline OpenSans-300-normal interactive-catalog" href="https://www.bhphotovideo.com/find/Catalog_frameset.jsp" name="Footer-Resources-Interactive Catalog" data-selenium="interactiveCatalog" title="Interactive Catalog">Browse our Summer 2019 Interactive Catalog</a>
+                 
+                    
+                    
+                    
+                      <a class="fs16 c36 noUnderline OpenSans-300-normal" href="https://www.bhphotovideo.com/bnh/controller/home?O=helpcenter&amp;A=getpage&amp;Q=contactForm.jsp&amp;destination=websupport" name="Footer-Resources-feedback" data-selenium="resourceFeedback" style="cursor: pointer;" target="_blank">
+                        <svg style="width:15px;height:15px;" class="left"><use xlink:href="#thumbs-up"></use></svg>
+                        <svg style="width:15px;height:15px;" class="left"><use xlink:href="#thumbs-down"></use></svg>
+                        Send Us your Feedback
+                      </a>
+                    
+                
+              </div>
+            </div>
+            <div class="show-more-customer-informaion">
+              
+              <div class="c37 fs16 upper cursor-pointer OpenSans-600-normal inlineBlock show-more-btn">
+                More Helpful Links <span class="fs18">&nbsp;&nbsp;+</span><span class="fs18 btn-open">&nbsp;&nbsp;¯</span>
+              </div>
+              
+            </div>
+            <div class="newsletter-and-apps" data-selenium="newsletterApp">
+              <div class="email-signup">
+                <h3 class="c36 fs18 OpenSans-300-normal upper">Sign up for B&amp;H news and special offers</h3>
+                <br>
+                <form method="post" action="https://www.bhphotovideo.com/find/emailSignup.jsp">
+                  <div class="clearfix">
+                    <div class="left email-signup-inner">
+                      <span class="fs18 submitted-rel fourteen yesAccount OpenSans-300-normal" data-selenium="yesAcc"><svg class="footer_signedUpCheck"><use xlink:href="#check"></use></svg>Thank you for joining the B&amp;H email list!</span>
+                      <span class="fs18 submitted-rel fourteen no-account-rel OpenSans-300-normal" data-selenium="noAcc"><svg class="footer_signedUpCheck"><use xlink:href="#check"></use></svg>Thank you for joining the B&amp;H email list!</span>
+                      <input type="text" name="email" size="20" maxlength="100" placeholder="email address" class="fs16 OpenSans-300-normal js-placeholder to-submit-rel email-input" data-selenium="email" data-pi="email">
+                      <button class="upper fs16 OpenSans-600-normal cursor-pointer to-submit-rel email-submit-btn" data-selenium="submitSignup">Sign Up</button><br>
+                      <span class="error ten c7">The email address you entered was an invalid email.</span>
+                      <div class="js-footer_createAccount footer_createAccount">
+                        <p class="no-account-rel OpenSans-300-normal fs14" data-selenium="no-account">Speed up future orders, see order history, create wish lists, and more.
+                          <a href="https://www.bhphotovideo.com/bnh/controller/home?O=inc-footer.jsp&amp;A=getpage&amp;Q=Login.jsp&amp;isLoginOnly=Y&amp;action=createAcct" data-selenium="emailSignupCreateAccount" class="openInOnePopupLayer" rel="noLayerCache">
+                            Create a B&amp;H Account
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-selenium="signUpOpt" class="fs12 email-signup-options to-submit-rel">
+                    <label class=" checked  c36 OpenSans-300-normal"><input type="checkbox" data-selenium="emailSignup" name="emailSignup" class="js-email-type" checked=""> Deal Zone Alerts</label>
+                    <label class=" checked  c36 OpenSans-300-normal"><input type="checkbox" data-selenium="emailType" name="dealZoneEmailSignup" class="js-email-type" checked=""> Weekly B&amp;H Newsletter</label>
+                  </div>
+                </form>
+                <span class="footerEmailLinks" data-selenium="footerEmail">
+                  <a name="Footer-Sign Up-Manage" data-selenium="SignupManage" href="https://www.bhphotovideo.com/bnh/controller/home?O=myAccount&amp;A=changeSubscribtion&amp;Q=&amp;update=Y" class="c35 fs14 noUnderline OpenSans-300-normal">Manage Existing Subscriptions</a><br>
+                  <a name="Footer-Sign Up-Sample" data-selenium="SignupSample" href="/email/current_newsletter.html" class="c35 fs14 noUnderline OpenSans-300-normal">See sample Newsletter</a>
+                </span>						
+              </div>
+              
+              <div class="bh-other-sites">
+                <h3 class="c36 fs18 OpenSans-300-normal upper">Other B&amp;H Sites</h3>	
+                <ul class="site-links-wrapper">
+                  <li class="site-link"><a class="noUnderline c36 OpenSans-300-normal" href="https://www.bhphotovideo.com/find/eduAdvantage.jsp" data-selenium="eduRootLink">Student Advantage</a></li>
+                  <li class="site-link"><a class="noUnderline c36 OpenSans-300-normal" href="https://www.bhphotovideo.com/find/shared/b2bHub/home.jsp" data-selenium="govEduLink">B2B Corp. Govt. &amp; Edu.</a></li>
+                  <li class="site-link"><a class="noUnderline c36 OpenSans-300-normal" href="https://www.bhphotovideo.com/find/gsa.jsp" data-selenium="gsaLink">Federal Marketplace</a></li>
+                </ul>
+              </div>
+              
+              <div class="footer-newsweek-award-container">
+                <h3 class="c36 fs18 OpenSans-300-normal upper">Great Customer Service</h3>
+                <a class="footer-newsweek-award-link noUnderline" href="https://www.bhphotovideo.com/find/HelpCenter/AboutUs.jsp">
+                  <img data-src="https://static.bhphoto.com/images/newsweek/newsweek-award-footer.svg" class="footer-newsweek-award-image js-lazy-awards" alt="Newsweek 2019 - America's best customer service" src="https://static.bhphoto.com/images/newsweek/newsweek-award-footer.svg">
+                  <p class="footer-newsweek-award-text">America's Best Customer Service List<br><span class="footer-newsweek-award-attribution">-Newsweek</span></p>
+                </a>
+              </div>
+              <div class="forbes-award">
+                <h3 class="c36 fs18 OpenSans-300-normal upper">More than a workplace</h3>
+                <br>
+                <a class="noUnderline" href="https://www.bhphotovideo.com/find/HelpCenter/AboutUs.jsp" style="text-decoration: none;">
+                  <img data-src="https://static.bhphoto.com/images/forbes/forbes_text_footer.png" class="forbes-text-footer js-lazy-awards" alt="B&amp;H named one of America's best employers!" src="https://static.bhphoto.com/images/forbes/forbes_text_footer.png">
+                  <img data-src="https://static.bhphoto.com/images/forbes/forbes_award_footer.png" class="forbes-award-footer js-lazy-awards" alt="Forbes 2018 - America's best mid-size employers" src="https://static.bhphoto.com/images/forbes/forbes_award_footer.png">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-secure-social js-footer-social" data-selenium="footerSecure">
+          <div class="footer-inner">
+            <div class="inlineBlock footer-secure-links">
+              <a rel="nofollow" href="http://www.scanalert.com/RatingVerify?ref=www.bhphotovideo.com" target="_blank" data-selenium="hackerSafeList" class="inlineBlock scanalert secure-link" name="Footer-McAfee Secure">McAfee Secure - Tested Daily</a>
+              <a rel="nofollow" onclick="window.open('//trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&amp;dn=bhphotovideo.com&amp;lang=en','verisign','height=500,width=560'); return false;" target="_blank" href="//trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&amp;dn=bhphotovideo.com&amp;lang=en" data-selenium="verisignSymantecLink" class="inlineBlock trustsealinfo secure-link" name="Footer-verisign Symantec">Norton Secured - Powered by Symantec</a>
+              <a rel="nofollow" target="_blank" href="http://www.bbb.org/new-york-city/business-reviews/photographic-equipment-and-supplies-retail/b-h-photo-video-pro-audio-in-new-york-ny-429/#bbbonlineclick" data-selenium="accreditedBusiness" class="inlineBlock bbb secure-link" name="Footer-BBB">BBB - Accredited Business</a>
+            </div>
+            <div class="bh-apps">
+              <div class="apple-android">
+                <h4 class="c18 fs13">B&amp;H Apps</h4>
+                <a class="c37 noUnderline" href="//www.bhphotovideo.com/c/promotion/10504/mobile-page.html" data-selenium="appleLink">
+                  <svg style="width:29px;height:32px;"><use xlink:href="#apple"></use></svg>
+                </a>
+                <a class="c37 noUnderline" href="//www.bhphotovideo.com/c/promotion/10504/mobile-page.html" data-selenium="androidLink">
+                  <svg style="width:29px;height:31px;"><use xlink:href="#android"></use></svg>
+                </a>
+              </div>
+              <div class="bh-mobile-site text-center">
+                <h4 class="c18 fs13">B&amp;H Mobile Site</h4>
+                <a name="Footer-Resources-View_Mobile_Site" data-selenium="viewMobileSite" class="c37 noUnderline new-mobile-site" href="https://www.bhphotovideo.com/bnh/controller/home?O=getpage.jsp&amp;A=SwitchMobileDesktop&amp;Q=&amp;switchDevice=mobile&amp;redirect=https://www.bhphotovideo.com" data-href="https://www.bhphotovideo.com/bnh/controller/home?O=getpage.jsp&amp;A=SwitchMobileDesktop&amp;Q=&amp;switchDevice=mobile">
+                  <svg style="width:29px;height:30px;"><use xlink:href="#mobile"></use></svg>
+                </a>
+              </div>
+            </div>
+            
+            <div class="inlineBlock footer-social-links">		
+              <div class="inlineBlock social-link youTube" data-selenium="youTube">
+                <div style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent none repeat scroll 0% 0%; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 86px; height: 24px;" id="___ytsubscribe_0"><iframe ng-non-bindable="" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 86px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" id="I0_1567665969248" name="I0_1567665969248" src="https://www.youtube.com/subscribe_embed?usegapi=1&amp;channel=BHPhotoVideoProAudio&amp;layout=default&amp;count=hidden&amp;origin=https%3A%2F%2Fwww.bhphotovideo.com&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.vi.X-97V6KC4to.O%2Fam%3DwQE%2Fd%3D1%2Frs%3DAGLTcCOC0_TT6Ehi3FB4NEUHD9nTKN8uEg%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1567665969248&amp;_gfid=I0_1567665969248&amp;parent=https%3A%2F%2Fwww.bhphotovideo.com&amp;pfname=&amp;rpctoken=15256370" data-gapiattached="true" width="100%" frameborder="0"></iframe></div>
+              </div>
+              
+              <a class="inlineBlock social-link pinterest" name="Footer-pinterest" href="https://pinterest.com/bhphotovideo/" data-selenium="pinterest" target="_blank"></a>
+              <a class="inlineBlock social-link instagram" name="Footer-instagram" href="https://instagram.com/bhphoto?ref=badge" data-selenium="instagram" target="_blank"></a>
+              
+              <a class="inlineBlock social-link twitter twitter-follow-button" name="Footer-twitter" href="https://twitter.com/bhphotovideo" data-selenium="twitterFollow" data-show-count="false" style="background-image: none;"></a>
+              
+              
+              <span class="inlineBlock social-link facebook" style="background-image: none;"><iframe src="https://www.facebook.com/plugins/like.php?app_id=202277603163321&amp;href=http%3A%2F%2Fwww.facebook.com%2Fbhphoto&amp;send=false&amp;layout=button_count&amp;width=86&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" style="border:none; overflow:hidden; width:86px; height:21px;" allowtransparency="true" frameborder="0"></iframe></span>
+              
+            </div>
+            
+          </div>
+        </div>
+                      
+        <div class="footer-company-info" data-selenium="footerCompInfo">
+          <div class="footer-inner OpenSans-300-normal clearfix">
+            <div class="left company-copright">
+              <a class="c18 fs13 noUnderline copyright-link" name="Footer-NYSuperStore" data-selenium="nySuperStore" href="https://www.bhphotovideo.com/find/HelpCenter/NYSuperStore08.jsp" target="_self"> 
+    © 2000-2019 B &amp; H Foto &amp; Electronics Corp. 420 9th Ave, New York, NY 10001</a><br>
+              <a class="c35 fs11 noUnderline" name="Footer-Privacy_Security" href="https://www.bhphotovideo.com/find/HelpCenter/Policies.jsp#privacySecurity" data-selenium="privacyStatement" target="_self">Privacy &amp; Security</a>
+            <a class="c35 fs11 noUnderline" name="Footer-User_Agreement_Disclaimer" href="https://www.bhphotovideo.com/find/HelpCenter/Policies.jsp#userAgreementDisclaimer" data-selenium="agreementDisclaimer" target="_self">User Agreement &amp; Disclaimer</a>
+                  <a class="c35 fs11 noUnderline" name="Footer-User_Export_Policy" href="https://www.bhphotovideo.com/find/HelpCenter/Policies.jsp#userAgreementDisclaimer" target="_self" data-selenium="exportPolicy">Export Policy</a>
+            <a class="c35 fs11 noUnderline" name="Footer-California_Privacy_Rights" href="https://www.bhphotovideo.com/find/HelpCenter/Policies.jsp#privacySecurity" target="_self" data-selenium="privacyRights">California Privacy Rights</a>
+            
+            </div>
+            
+            <div class="fs10 c35 left company-info-shabbos-note">
+              We close every Friday evening to Saturday evening for Shabbos.
+              <a name="Footer-Weekend hours" data-selenium="weekendHours" href="https://www.bhphotovideo.com/find/SHcalendar.jsp" class="openInOnePopupLayer c39 underline-on-hover">Weekend hours</a>
+            </div>
+                   
+            <div class="fs10 c35 left company-disclaimer">
+              <p>Prices, specifications, and images are subject to change without notice. Not responsible for typographical or illustrative errors. Manufacturer rebates, terms, conditions, and expiration dates are subject to manufacturers printed forms NYC DCA Lic.: Elec. Store #0906712 Elec. &amp; Home App. Serv. Deal. #0907905; Sec. Hd. Deal. Gen. #0907906</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+  </ng-template>
+  <!-- / FOOTER -->

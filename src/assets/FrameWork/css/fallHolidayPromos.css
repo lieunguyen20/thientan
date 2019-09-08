@@ -1,0 +1,70 @@
+	.grabTheDealsContainer{
+		font-family: Arial, Helvetica, sans-serif;
+		margin-bottom:15px;
+		margin-top: 35px;
+	}
+	.grabTheDealsTitle{
+		background-color:#880000;
+		color:#FFFFFF;
+		font-size:11px;
+		line-height:16px;
+		text-align:center;
+	}
+	.GTDbrandName{
+		color: #2200cc;
+		text-decoration: underline;
+		margin-bottom:0;
+		margin-top: 5px;
+		font-size: 16px;
+	}
+	a.GTDlink {
+		font-size: 1em;
+		color: #000;
+		text-decoration: none;
+	}
+	.blackFri{
+		background-color:#F0F0F0;
+		border:1px solid #ABABAB;
+		margin-top:10px;
+		width:213px;
+		padding-bottom: 0px;
+		height: 70px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	h4.blackFriTitle{
+		color: #820005;
+		font-size:14px;
+		margin-bottom:0;
+	}
+	.blackFriMes{
+		line-height: 1.2;
+	}
+	.hassleFreeContainer{
+		background-color:#F0F0F0;
+		border:1px solid #ABABAB;
+		margin-top:10px;
+		width:218px;
+		padding-bottom: 0px;
+		height: 40px;
+		padding-left: 5px;
+	}
+	a.hassleFreeShopping{
+		color: #C51919;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	.holidayShowcaseLeft{
+		width: 249px;
+		float: left;
+	}
+	.holidayShowcaseCenter{
+		width: 217px;
+		float: left;
+		margin-left: 6px;
+	}
+	.holidayShowcaseRight{
+		width: 211px;
+		float: left;
+		margin-left: 5px;
+	}

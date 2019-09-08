@@ -1,0 +1,227 @@
+.temp5 .tMain .tBlock{
+    margin: 0 !important;
+}
+.root-page-gsa #tContent{
+    margin: auto !important;
+    max-width: 1350px !important;
+    width: 100% !important;
+}
+/*  gsa top panel
+-------------------------*/
+#doc1 .gsa-top-banner{
+	width: 100%;
+	background: #555;
+	padding: 15px 5px;
+	margin-bottom: 20px;
+}
+.gsa-top-banner-content{
+	display: flex;
+	align-items: center;
+	margin: auto auto;
+}
+.gsa-primary-header{
+	display: flex;
+	flex-direction: column;
+	background: #fff;	
+	width: 350px;
+	align-items: center;
+    padding: 10px 5px 5px;
+	margin-right: 40px;
+	box-shadow: 0 0 2px 1px black;
+	align-self: center;
+}
+.gsa-primary-header-title{
+	font-size: 24px;
+	margin: 0;
+	font-weight: 500;
+}
+.gsa-primary-img{
+	width: 25px;
+	vertical-align: sub
+}
+.gsa-federal-creds{
+	display: flex;	
+	font-size: 11px;
+	justify-content: space-between;
+	margin: 10px auto;
+}
+.gsa-federal-cred{
+    margin: 0 2px;
+    
+}
+.gsa-red{
+    color: #E62D00;
+}
+.gsa-info-light{
+	fill: white;
+	width: 15px;
+	height: 15px;
+	vertical-align: text-top;
+}
+.gsa-tooltip-opener{
+	cursor: pointer
+}
+.gsa-secondary-header-title{
+	font-weight: 600
+}
+.gsa-secondary-header-1{
+	width: 250px;
+}
+.gsa-secondary-header-2{
+	width: 240px;
+}
+.gsa-secondary-header-3{
+	width: 150px
+}
+.gsa-banner-border{
+	height: 65px;
+    margin: 5px 30px 0 15px;
+	width: 2px;
+	border-right: 2px dotted grey;
+}
+.gsa-secondary-header-title{
+	color: #98c741;
+	font-size: 16px;
+	margin: 0;
+}
+.gsa-secondary-header-text{
+	color: white;
+	font-size: 12px;
+	line-height: 18px;
+	margin: 0;
+}
+/*  gsa bottom panel
+-------------------------*/
+.gsa-bottom-info-wrapper{
+	display: flex;
+	justify-content: center;
+	background: #555;
+	font-size: 16px;
+	padding: 10px;
+	margin: 40px;
+}
+.gsa-bi-header{
+	color: #98c741;
+	padding: 18px
+}
+.gsa-bi-email{
+	color: white;
+	padding: 18px
+}
+.gsa-bi-phone{
+	color: white;
+	padding: 18px
+}
+/*  Holiday note alignment
+-------------------------*/
+div.holNotes{margin-left: 10px;}
+.categoriesWrapper {
+	box-shadow: rgb(204, 204, 204) 0px 0px 5px;
+    width: 100% !important;
+    max-width: 1350px;
+}
+
+#homePageCategiriesMain a {
+	display: block;
+  	padding: 10px;
+  	font-size: 15px;
+    text-decoration: none;
+}
+
+#homePageCategiriesMain .category {
+	float: left;
+	width: 16.666665%;
+	padding: 0;
+}
+
+.categoryImagePlaceholder {
+	max-width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+	background-image: url(img/categorySprite.jpg);
+	background-size: 620%;
+	position: relative;
+	margin: auto;
+}
+
+.category:nth-of-type(-n+6) .categoryImagePlaceholder {
+	margin-top: 0%;
+}
+
+.category:nth-last-child(-n+6) .categoryImagePlaceholder {
+	top: -8px;
+}
+
+.category:nth-last-child(-n+6) span {
+	margin-top: -15px;
+	position: relative;
+}
+
+#homePageCategiriesMain .category span {
+	display: block;
+	text-align: center;
+	height: 30px;
+}
+
+@media (max-width: 1366px) {
+	section#homePageCategiriesMain {
+		margin-bottom: 0;
+	}
+
+	.categoriesWrapper {
+		box-shadow: none;
+	}
+
+	.categoryImagePlaceholder {
+		max-width: 70%;
+		padding-bottom: 70%;
+	}
+
+	.category {
+		font-size: 15px;
+	}
+}
+
+.Computers .categoryImagePlaceholder {
+	background-position: 20% 0;
+}
+
+.homeEntertainment .categoryImagePlaceholder {
+	background-position: 40% 0;
+}
+
+.proVideo .categoryImagePlaceholder {
+	background-position: 60% 0;
+}
+
+.Mobile .categoryImagePlaceholder {
+	background-position: 80% 0;
+}
+
+.proAudio .categoryImagePlaceholder {
+	background-position: 100% 0;
+}
+
+.photoAccessories .categoryImagePlaceholder {
+	background-position: 0 100%;
+}
+
+.consumerVideo .categoryImagePlaceholder {
+	background-position: 20% 100%;
+}
+
+.lightingStudio .categoryImagePlaceholder {
+	background-position: 40% 100%;
+}
+
+.avPresentation .categoryImagePlaceholder {
+	background-position: 60% 100%;
+}
+
+.Surveillance .categoryImagePlaceholder {
+	background-position: 80% 100%;
+}
+
+.Optics .categoryImagePlaceholder {
+	background-position: 100% 100%;
+}

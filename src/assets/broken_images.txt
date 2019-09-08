@@ -1,0 +1,1 @@
+a:1:{s:10:"index.html";a:3:{i:0;s:46:"static.bhphoto.com/bimages/touch-icon-ipad.png";i:1;s:55:"static.bhphoto.com/bimages/touch-icon-iphone-retina.png";i:2;s:53:"static.bhphoto.com/bimages/touch-icon-ipad-retina.png";}}
