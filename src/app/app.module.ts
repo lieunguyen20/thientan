@@ -7,7 +7,7 @@ import { MatMomentDateModule } from '@angular/material-moment-adapter';
 import { MatButtonModule, MatIconModule } from '@angular/material';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { TranslateModule } from '@ngx-translate/core';
-import bootstrap from "bootstrap";
+import bootstrap from 'bootstrap';
 import 'hammerjs';
 
 import { FuseModule } from '@fuse/fuse.module';
