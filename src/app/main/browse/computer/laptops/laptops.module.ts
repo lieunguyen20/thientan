@@ -5,9 +5,10 @@ import { ProductComponent } from './product/product.component';
 import { ProductsComponent } from './products/products.component';
 
 import { LaptopsRoutingModule } from './laptops-routing.module';
+import {LaptopsComponent} from './laptops.component';
 
 @NgModule({
-  declarations: [ ProductComponent, ProductsComponent ],
+  declarations: [ ProductComponent, ProductsComponent ,LaptopsComponent],
   imports: [
     CommonModule,
     LaptopsRoutingModule

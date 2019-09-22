@@ -19,69 +19,53 @@
         <section id="header-region">
           <div id="header-view" class="clearfix">
             <div class="heading-container new-page-width">
-              <h1>Landscape &amp; Scenic Photography</h1> <a href="#" class="see-other-types">See Other Types of
-                Photography</a>
-              <div class="open-close-icon-container"> <svg>
+              <h1>Landscape &amp; Scenic Photography</h1> <a href="#" class="see-other-types">See Other Types of Photography</a>
+              <div class="open-close-icon-container  " [ngClass]="{'closed': _Cloopen=='close'}" [ngClass]="{'': _Cloopen=='open'}" (click)="onclick()"> <svg>
                   <use xlink:href="#x"></use>
                 </svg> </div>
             </div><!-- /heading-container -->
             <div id="sibling-categories-region">
               <div id="sibling-categories-view" class="new-page-width clearfix">
                 <ul class="sibling-categories-list">
-                  <li class="sibling-category-item"><a
-                      href="https://www.bhphotovideo.com/c/how-to-shoot-birding-and-wildlife-photography/ci/32828/N/3611103778/sba"
-                      data-app-route="https://www.bhphotovideo.com/find/shop-by-application.jsp/ci/32828/N/3611103778">Birding
-                      &amp; Wildlife</a></li>
+                  <li class="sibling-category-item"><a href="https://www.bhphotovideo.com/c/how-to-shoot-birding-and-wildlife-photography/ci/32828/N/3611103778/sba" data-app-route="https://www.bhphotovideo.com/find/shop-by-application.jsp/ci/32828/N/3611103778">Birding &amp; Wildlife</a></li>
                   <li class="sibling-category-item"><span>Landscape &amp; Scenic</span></li>
-                  <li class="sibling-category-item"><a
-                      href="https://www.bhphotovideo.com/c/how-to-shoot-macro-photography/ci/32949/N/3607616143/sba"
-                      data-app-route="https://www.bhphotovideo.com/find/shop-by-application.jsp/ci/32949/N/3607616143">Macro</a>
-                  </li>
-                  <li class="sibling-category-item"><a
-                      href="https://www.bhphotovideo.com/c/how-to-shoot-night-photography/ci/33000/N/3607179222/sba"
-                      data-app-route="https://www.bhphotovideo.com/find/shop-by-application.jsp/ci/33000/N/3607179222">Night
-                      &amp; Astrophotography</a></li>
-                  <li class="sibling-category-item"><a
-                      href="https://www.bhphotovideo.com/c/how-to-shoot-sports-photography/ci/33019/N/3607179208/sba"
-                      data-app-route="https://www.bhphotovideo.com/find/shop-by-application.jsp/ci/33019/N/3607179208">Sports</a>
-                  </li>
-                  <li class="sibling-category-item"><a
-                      href="https://www.bhphotovideo.com/c/how-to-shoot-wedding-photography/ci/33029/N/3607179198/sba"
-                      data-app-route="https://www.bhphotovideo.com/find/shop-by-application.jsp/ci/33029/N/3607179198">Wedding</a>
-                  </li>
+                  <li class="sibling-category-item"><a href="https://www.bhphotovideo.com/c/how-to-shoot-macro-photography/ci/32949/N/3607616143/sba" data-app-route="https://www.bhphotovideo.com/find/shop-by-application.jsp/ci/32949/N/3607616143">Macro</a></li>
+                  <li class="sibling-category-item"><a href="https://www.bhphotovideo.com/c/how-to-shoot-night-photography/ci/33000/N/3607179222/sba" data-app-route="https://www.bhphotovideo.com/find/shop-by-application.jsp/ci/33000/N/3607179222">Night &amp; Astrophotography</a></li>
+                  <li class="sibling-category-item"><a href="https://www.bhphotovideo.com/c/how-to-shoot-sports-photography/ci/33019/N/3607179208/sba" data-app-route="https://www.bhphotovideo.com/find/shop-by-application.jsp/ci/33019/N/3607179208">Sports</a></li>
+                  <li class="sibling-category-item"><a href="https://www.bhphotovideo.com/c/how-to-shoot-wedding-photography/ci/33029/N/3607179198/sba" data-app-route="https://www.bhphotovideo.com/find/shop-by-application.jsp/ci/33029/N/3607179198">Wedding</a></li>
                 </ul>
               </div>
             </div>
-            <div id="explora-content" class="groups-container new-page-width clearfix open">
+            <div id="explora-content" class="groups-container new-page-width  clearfix " [ngClass]="{'open': _Cloopen=='open'}" [ngClass]="{'close': _Cloopen=='close'}">
               <div id="left-column-region" class="left-sections">
                 <div id="explora-left-column-view">
                   <ul>
-                    <li data-section="inspiration" class="show-group-inspiration active"><a href="#inspiration">
+                    <li data-section="inspiration" class="show-group-inspiration" [ngClass]="{'active': _displayView=='inspiration-group-view'}"><a href="javascript:void(0);" (click)="changeView('inspiration-group-view')">
                         <h2>Inspiration</h2>
                       </a> <svg>
                         <use xlink:href="#arrowDown"></use>
                       </svg></li>
-                    <li data-section="product-guide" class="show-group-productGuide"><a href="#product-guide">
+                    <li data-section="product-guide" class="show-group-productGuide" [ngClass]="{'active': _displayView=='product-guide-view'}"><a href="javascript:void(0);" (click)="changeView('product-guide-view')">
                         <h2>Product Guide</h2>
                       </a> <svg>
                         <use xlink:href="#arrowDown"></use>
                       </svg></li>
-                    <li data-section="beginner-tips" class="show-group-beginnerTips"><a href="#beginner-tips">
+                    <li data-section="beginner-tips" class="show-group-beginnerTips" [ngClass]="{'active': _displayView=='beginer-tips-view'}"><a href="javascript:void(0);" (click)="changeView('beginer-tips-view')">
                         <h2>Beginner Tips</h2>
                       </a> <svg>
                         <use xlink:href="#arrowDown"></use>
                       </svg></li>
-                    <li data-section="pro-tips" class="show-group-proTips"><a href="#pro-tips">
+                    <li data-section="pro-tips" class="show-group-proTips" [ngClass]="{'active': _displayView=='pro-tips-view'}"><a href="javascript:void(0);" (click)="changeView('pro-tips-view')">
                         <h2>Pro Tips</h2>
                       </a> <svg>
                         <use xlink:href="#arrowDown"></use>
                       </svg></li>
-                    <li data-section="talk-to-experts" class="show-group-talkToExperts"><a href="#talk-to-experts">
+                    <li data-section="talk-to-experts" class="show-group-talkToExperts" [ngClass]="{'active': _displayView=='talk-to-experts-view'}"><a href="javascript:void(0);" (click)="changeView('talk-to-experts-view')">
                         <h2>Talk to Experts</h2>
                       </a> <svg>
                         <use xlink:href="#arrowDown"></use>
                       </svg></li>
-                    <li data-section="articles-reviews" class="show-group-articlesReviews"><a href="#articles-reviews">
+                    <li data-section="articles-reviews" class="show-group-articlesReviews" [ngClass]="{'active': _displayView=='articles-reviews-view'}"><a href="javascript:void(0);" (click)="changeView('articles-reviews-view')">
                         <h2>Articles &amp; Reviews</h2>
                       </a> <svg>
                         <use xlink:href="#arrowDown"></use>
@@ -90,243 +74,541 @@
                 </div>
               </div><!-- /left-sections -->
               <div id="group-display-region" class="right-group-view-container">
-                <div id="inspiration-group-view" class="clearfix visible">
+                <!--#region inspiration-group-vew-->
+                <div id="inspiration-group-view" class="clearfix visible" *ngIf="_displayView=='inspiration-group-view'">
                   <div class="smooth-div-scroll-container">
-                    <div class="scrollingHotSpotLeft disabled scrollingHotSpotLeftVisible"
-                      style="display: block; opacity: 1;" data-selenium="scrollLeft"><svg>
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down-light"></use>
-                      </svg></div>
-                    <div class="scrollingHotSpotRight scrollingHotSpotRightVisible" data-selenium="scrollRight"
-                      style="opacity: 1; display: block;"><svg>
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down-light"></use>
-                      </svg></div>
-                    <div class="scrollWrapper">
-                      <div class="scrollableArea" style="width: 2754px;">
-                        <div class="item-container three-images-item">
-                          <div class="top-image">
-                            <div class="image-container"><img
-                                src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_smaller/public/sba/golden_top_shot-1.jpg?itok=ujBeWSKo"
-                                alt="">
-                              <div class="exif-container">
-                                <div class="content-container">
-                                  <h4></h4>
-                                  <ul class="exif-list">
-                                    <li class="exif-item"><span class="label">The Golden Hour:</span> <a
-                                        href="https://blogd7.bhphotovideo.com/explora/instagram/quick-tips-landscape-photographer"
-                                        class="value">© Morris Hersko</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="bottom-images clearfix">
-                            <div class="left-image">
-                              <div class="image-container"><img
-                                  src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_smaller/public/sba/01-tr-maltese-cross-cabin.jpg?itok=vusRNoqM"
-                                  alt=""></div>
-                            </div>
-                            <div class="right-image">
-                              <div class="image-container"><img
-                                  src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_smaller/public/sba/3_126.jpg?itok=MWG5TZZm"
-                                  alt="">
-                                <div class="exif-container">
-                                  <div class="content-container">
-                                    <h4></h4>
-                                    <ul class="exif-list">
-                                      <li class="exif-item"><span class="label">Emerald Lake Lodge:</span> <a
-                                          href="https://blogd7.bhphotovideo.com/explora/photography/features/winter-night-magic-with-astrophotographer-rachel-jones-ross"
-                                          class="value">© Rachel Jones Ross</a></li>
-                                    </ul>
+                      <div class="scrollingHotSpotLeft  scrollingHotSpotLeftVisible" (click)="leftclick()" style="opacity: 1;" data-selenium="scrollLeft"><svg>
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down-light"></use>
+                          </svg></div>
+                      <div class="scrollingHotSpotRight scrollingHotSpotRightVisible" (click)="rightclick()" data-selenium="scrollRight" style="opacity: 1;"><svg>
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down-light"></use>
+                          </svg></div>
+                      <div class="scrollWrapper">
+                          <div class="scrollableArea" style="width: 2754px;">
+                              <div class="item-container three-images-item">
+                                  <div class="top-image">
+                                      <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_smaller/public/sba/476x316_50x50_3a-camping_0547.jpg?itok=vrwR5U73" alt="">
+                                          <div class="exif-container">
+                                              <div class="content-container">
+                                                  <h4></h4>
+                                                  <ul class="exif-list">
+                                                      <li class="exif-item"><span class="label">Grass:</span> <a href="https://www.bhphotovideo.com/c/product/1317561-REG/sony_sel100f28gm_fe_100mm_f_2_8_stf.html" class="value">© Shawn C. Steiner</a></li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
                                   </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="item-container single-image-item">
-                          <div class="single-image">
-                            <div class="image-container"><img
-                                src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_smaller/public/sba/6c-camping_1153.jpg?itok=xkTAePN8"
-                                alt="">
-                              <div class="exif-container">
-                                <div class="content-container">
-                                  <h4></h4>
-                                  <ul class="exif-list">
-                                    <li class="exif-item"><span class="label">Tree Roots:</span> <a
-                                        href="https://blogd7.bhphotovideo.com/explora/photography/features/landscape-photography-in-central-new-york-is-gorges"
-                                        class="value">© Shawn C. Steiner</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="item-container single-image-item thin-column">
-                          <div class="single-image">
-                            <div class="image-container"><img
-                                src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_smaller/public/sba/leading_lines_14-1.jpg?itok=DFvH7xPK"
-                                alt="">
-                              <div class="exif-container">
-                                <div class="content-container">
-                                  <h4></h4>
-                                  <ul class="exif-list">
-                                    <li class="exif-item"><span class="label">Leading Lines:</span> <a
-                                        href="https://blogd7.bhphotovideo.com/explora/instagram/quick-tips-landscape-photographer"
-                                        class="value">© Paige Denkin</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="item-container three-images-item">
-                          <div class="top-image">
-                            <div class="image-container"><img
-                                src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_smaller/public/sba/7_60.jpg?itok=vjDiRweb"
-                                alt="">
-                              <div class="exif-container">
-                                <div class="content-container">
-                                  <h4></h4>
-                                  <ul class="exif-list">
-                                    <li class="exif-item"><span class="label">Twilight in the Yukon:</span> <a
-                                        href="https://blogd7.bhphotovideo.com/explora/photography/features/winter-night-magic-with-astrophotographer-rachel-jones-ross"
-                                        class="value">© Rachel Jones Ross</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="bottom-images clearfix">
-                            <div class="left-image">
-                              <div class="image-container"><img
-                                  src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_smaller/public/sba/13_23.jpg?itok=uEPYDiBP"
-                                  alt="">
-                                <div class="exif-container">
-                                  <div class="content-container">
-                                    <h4></h4>
-                                    <ul class="exif-list">
-                                      <li class="exif-item"><span class="label">Vermilion Lakes:</span> <a
-                                          href="https://blogd7.bhphotovideo.com/explora/photography/features/winter-night-magic-with-astrophotographer-rachel-jones-ross"
-                                          class="value">© Rachel Jones Ross</a></li>
-                                    </ul>
+                                  <div class="bottom-images clearfix">
+                                      <div class="left-image">
+                                          <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_smaller/public/sba/6a-camping_0642.jpg?itok=SKgIAP55" alt="">
+                                              <div class="exif-container">
+                                                  <div class="content-container">
+                                                      <h4></h4>
+                                                      <ul class="exif-list">
+                                                          <li class="exif-item"><span class="label">Creek:</span> <a href="https://blogd7.bhphotovideo.com/explora/photography/features/landscape-photography-in-central-new-york-is-gorges" class="value">© Shawn C. Steiner</a></li>
+                                                      </ul>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="right-image">
+                                          <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_smaller/public/sba/leading_lines_14-1.jpg?itok=DFvH7xPK" alt="">
+                                              <div class="exif-container">
+                                                  <div class="content-container">
+                                                      <h4></h4>
+                                                      <ul class="exif-list">
+                                                          <li class="exif-item"><span class="label">Leading Lines:</span> <a href="https://blogd7.bhphotovideo.com/explora/instagram/quick-tips-landscape-photographer" class="value">© Paige Denkin</a></li>
+                                                      </ul>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
                                   </div>
-                                </div>
                               </div>
-                            </div>
-                            <div class="right-image">
-                              <div class="image-container"><img
-                                  src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_smaller/public/sba/6b-camping_1647.jpg?itok=pjlpT-Or"
-                                  alt="">
-                                <div class="exif-container">
-                                  <div class="content-container">
-                                    <h4></h4>
-                                    <ul class="exif-list">
-                                      <li class="exif-item"><span class="label">Water Falls:</span> <a
-                                          href="https://blogd7.bhphotovideo.com/explora/photography/features/landscape-photography-in-central-new-york-is-gorges"
-                                          class="value">© Shawn C. Steiner</a></li>
-                                    </ul>
+                              <div class="item-container single-image-item">
+                                  <div class="single-image">
+                                      <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_smaller/public/sba/7_60.jpg?itok=vjDiRweb" alt="">
+                                          <div class="exif-container">
+                                              <div class="content-container">
+                                                  <h4></h4>
+                                                  <ul class="exif-list">
+                                                      <li class="exif-item"><span class="label">Twilight in the Yukon:</span> <a href="https://blogd7.bhphotovideo.com/explora/photography/features/winter-night-magic-with-astrophotographer-rachel-jones-ross" class="value">© Rachel Jones Ross</a></li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
                                   </div>
-                                </div>
                               </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="item-container single-image-item">
-                          <div class="single-image">
-                            <div class="image-container"><img
-                                src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_smaller/public/sba/2-camping_0061.jpg?itok=3O8ye0yv"
-                                alt="">
-                              <div class="exif-container">
-                                <div class="content-container">
-                                  <h4></h4>
-                                  <ul class="exif-list">
-                                    <li class="exif-item"><span class="label">Lucifer Falls:</span> <a
-                                        href="https://blogd7.bhphotovideo.com/explora/photography/features/landscape-photography-in-central-new-york-is-gorges"
-                                        class="value">© Shawn C. Steiner</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="item-container single-image-item thin-column">
-                          <div class="single-image">
-                            <div class="image-container"><img
-                                src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_smaller/public/sba/blue_hour_1.jpg?itok=XaOZ7lJm"
-                                alt="">
-                              <div class="exif-container">
-                                <div class="content-container">
-                                  <h4></h4>
-                                  <ul class="exif-list">
-                                    <li class="exif-item"><span class="label">Blue Hour:</span> <a
-                                        href="https://blogd7.bhphotovideo.com/explora/instagram/quick-tips-landscape-photographer"
-                                        class="value">© Morris Hersko</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="item-container three-images-item">
-                          <div class="top-image">
-                            <div class="image-container"><img
-                                src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_smaller/public/sba/4_111.jpg?itok=BR7OavLu"
-                                alt="">
-                              <div class="exif-container">
-                                <div class="content-container">
-                                  <h4></h4>
-                                  <ul class="exif-list">
-                                    <li class="exif-item"><span class="label">Moraine Lake:</span> <a
-                                        href="https://blogd7.bhphotovideo.com/explora/photography/features/winter-night-magic-with-astrophotographer-rachel-jones-ross"
-                                        class="value">© Rachel Jones Ross</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="bottom-images clearfix">
-                            <div class="left-image">
-                              <div class="image-container"><img
-                                  src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_smaller/public/sba/476x316_50x50_3a-camping_0547.jpg?itok=vrwR5U73"
-                                  alt="">
-                                <div class="exif-container">
-                                  <div class="content-container">
-                                    <h4></h4>
-                                    <ul class="exif-list">
-                                      <li class="exif-item"><span class="label">Grass:</span> <a
-                                          href="https://www.bhphotovideo.com/c/product/1317561-REG/sony_sel100f28gm_fe_100mm_f_2_8_stf.html"
-                                          class="value">© Shawn C. Steiner</a></li>
-                                    </ul>
+                              <div class="item-container single-image-item thin-column">
+                                  <div class="single-image">
+                                      <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_smaller/public/sba/4_111.jpg?itok=BR7OavLu" alt="">
+                                          <div class="exif-container">
+                                              <div class="content-container">
+                                                  <h4></h4>
+                                                  <ul class="exif-list">
+                                                      <li class="exif-item"><span class="label">Moraine Lake:</span> <a href="https://blogd7.bhphotovideo.com/explora/photography/features/winter-night-magic-with-astrophotographer-rachel-jones-ross" class="value">© Rachel Jones Ross</a></li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
                                   </div>
-                                </div>
                               </div>
-                            </div>
-                            <div class="right-image">
-                              <div class="image-container"><img
-                                  src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_smaller/public/sba/6a-camping_0642.jpg?itok=SKgIAP55"
-                                  alt="">
-                                <div class="exif-container">
-                                  <div class="content-container">
-                                    <h4></h4>
-                                    <ul class="exif-list">
-                                      <li class="exif-item"><span class="label">Creek:</span> <a
-                                          href="https://blogd7.bhphotovideo.com/explora/photography/features/landscape-photography-in-central-new-york-is-gorges"
-                                          class="value">© Shawn C. Steiner</a></li>
-                                    </ul>
+                              <div class="item-container three-images-item">
+                                  <div class="top-image">
+                                      <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_smaller/public/sba/6c-camping_1153.jpg?itok=xkTAePN8" alt="">
+                                          <div class="exif-container">
+                                              <div class="content-container">
+                                                  <h4></h4>
+                                                  <ul class="exif-list">
+                                                      <li class="exif-item"><span class="label">Tree Roots:</span> <a href="https://blogd7.bhphotovideo.com/explora/photography/features/landscape-photography-in-central-new-york-is-gorges" class="value">© Shawn C. Steiner</a></li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
                                   </div>
-                                </div>
+                                  <div class="bottom-images clearfix">
+                                      <div class="left-image">
+                                          <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_smaller/public/sba/blue_hour_1.jpg?itok=XaOZ7lJm" alt="">
+                                              <div class="exif-container">
+                                                  <div class="content-container">
+                                                      <h4></h4>
+                                                      <ul class="exif-list">
+                                                          <li class="exif-item"><span class="label">Blue Hour:</span> <a href="https://blogd7.bhphotovideo.com/explora/instagram/quick-tips-landscape-photographer" class="value">© Morris Hersko</a></li>
+                                                      </ul>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="right-image">
+                                          <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_smaller/public/sba/3_126.jpg?itok=MWG5TZZm" alt="">
+                                              <div class="exif-container">
+                                                  <div class="content-container">
+                                                      <h4></h4>
+                                                      <ul class="exif-list">
+                                                          <li class="exif-item"><span class="label">Emerald Lake Lodge:</span> <a href="https://blogd7.bhphotovideo.com/explora/photography/features/winter-night-magic-with-astrophotographer-rachel-jones-ross" class="value">© Rachel Jones Ross</a></li>
+                                                      </ul>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
                               </div>
-                            </div>
+                              <div class="item-container single-image-item">
+                                  <div class="single-image">
+                                      <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_smaller/public/sba/01-tr-maltese-cross-cabin.jpg?itok=vusRNoqM" alt=""></div>
+                                  </div>
+                              </div>
+                              <div class="item-container single-image-item thin-column">
+                                  <div class="single-image">
+                                      <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_smaller/public/sba/6b-camping_1647.jpg?itok=pjlpT-Or" alt="">
+                                          <div class="exif-container">
+                                              <div class="content-container">
+                                                  <h4></h4>
+                                                  <ul class="exif-list">
+                                                      <li class="exif-item"><span class="label">Water Falls:</span> <a href="https://blogd7.bhphotovideo.com/explora/photography/features/landscape-photography-in-central-new-york-is-gorges" class="value">© Shawn C. Steiner</a></li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="item-container three-images-item">
+                                  <div class="top-image">
+                                      <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_smaller/public/sba/13_23.jpg?itok=uEPYDiBP" alt="">
+                                          <div class="exif-container">
+                                              <div class="content-container">
+                                                  <h4></h4>
+                                                  <ul class="exif-list">
+                                                      <li class="exif-item"><span class="label">Vermilion Lakes:</span> <a href="https://blogd7.bhphotovideo.com/explora/photography/features/winter-night-magic-with-astrophotographer-rachel-jones-ross" class="value">© Rachel Jones Ross</a></li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="bottom-images clearfix">
+                                      <div class="left-image">
+                                          <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_smaller/public/sba/2-camping_0061.jpg?itok=3O8ye0yv" alt="">
+                                              <div class="exif-container">
+                                                  <div class="content-container">
+                                                      <h4></h4>
+                                                      <ul class="exif-list">
+                                                          <li class="exif-item"><span class="label">Lucifer Falls:</span> <a href="https://blogd7.bhphotovideo.com/explora/photography/features/landscape-photography-in-central-new-york-is-gorges" class="value">© Shawn C. Steiner</a></li>
+                                                      </ul>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="right-image">
+                                          <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_smaller/public/sba/golden_top_shot-1.jpg?itok=ujBeWSKo" alt="">
+                                              <div class="exif-container">
+                                                  <div class="content-container">
+                                                      <h4></h4>
+                                                      <ul class="exif-list">
+                                                          <li class="exif-item"><span class="label">The Golden Hour:</span> <a href="https://blogd7.bhphotovideo.com/explora/instagram/quick-tips-landscape-photographer" class="value">© Morris Hersko</a></li>
+                                                      </ul>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
                           </div>
-                        </div>
                       </div>
-                    </div>
                   </div>
+              </div>
+                <!--#endregion inspiration-group-view-->
+                
+                <!--#region product-guide-view-->
+                <div id="product-guide-view" class="guides-tips-view clearfix visible" *ngIf="_displayView=='product-guide-view'">
+                  <div class="smooth-div-scroll-container">
+                    <div class="scrollingHotSpotLeft  scrollingHotSpotLeftVisible" (click)="leftclick()" style="opacity: 1;" data-selenium="scrollLeft"><svg>
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down-light"></use>
+                  </svg></div>
+              <div class="scrollingHotSpotRight scrollingHotSpotRightVisible" (click)="rightclick()" data-selenium="scrollRight" style="opacity: 1;"><svg>
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down-light"></use>
+                  </svg></div>
+                      <div class="scrollWrapper">
+                          <div class="scrollableArea" style="width: 1950px;">
+                              <div class="item-container">
+                                  <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/sba/lens-wide-angle_0.png?itok=8SkxpSbO" alt=""></div>
+                                  <h4>Lenses</h4>
+                                  <div class="text-container">The traditional landscape lens is a wide-angle lens that captures expansive vistas and scenery. However, you can use normal and telephoto lenses to photograph landscape with a unique perspective and create panoramic images.</div>
+                                  <div class="badge hidden"></div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/sba/tripod_2.png?itok=PGp5jSE8" alt=""></div>
+                                  <h4>Tripods</h4>
+                                  <div class="text-container">The tripod is the primary tool for the photographer looking to capture the sharpest possible image. No matter how fast the shutter speed is, a tripod will stabilize your camera and help eliminate camera shake and vibrations.</div>
+                                  <div class="badge hidden"></div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/sba/bubble-level_0.png?itok=-KWFWZN1" alt=""></div>
+                                  <h4>Bubble Levels</h4>
+                                  <div class="text-container">A common “mistake” in landscape photography is the tilted horizon. The horizon is always level, so unless you have a reason to make it tilted, you should ensure your camera is level. One tool for that is the ubiquitous bubble level.</div>
+                                  <div class="badge hidden"></div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/sba/shutter-release_1.png?itok=5N2MO2W3" alt=""></div>
+                                  <h4>Shutter Releases</h4>
+                                  <div class="text-container">Even with a tripod, the simple act of releasing the shutter with your finger can shake the camera and make your photo not-as-sharp as it could be. A remote release will allow you to trigger the camera without touching it.</div>
+                                  <div class="badge hidden"></div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/sba/filters.png?itok=oVYodcnt" alt=""></div>
+                                  <h4>Filters / Filter Holders</h4>
+                                  <div class="text-container">Filters are placed before the lens to alter the light and create unique effects for your images. As powerful as post-processing software is, there are some filters that create effects for landscape photos that cannot be duplicated digitally like polarizers.</div>
+                                  <div class="badge hidden"></div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/sba/camera_1.png?itok=e6Z-Bv3Y" alt=""></div>
+                                  <h4>Cameras</h4>
+                                  <div class="text-container">Use any camera to photograph landscapes! Having said that, cameras with larger sensors and advanced exposure controls have definite advantages over basic point-and-shoot cameras.</div>
+                                  <div class="badge hidden"></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                <!--#endregion product-guide-view-->
+
+                <!--#region beginer-tips-view-->
+                <div id="beginner-tips-view" class="guides-tips-view clearfix visible" *ngIf="_displayView=='beginer-tips-view'">
+                  <div class="smooth-div-scroll-container">
+                    <div class="scrollingHotSpotLeft  scrollingHotSpotLeftVisible" (click)="leftclick()" style="opacity: 1;" data-selenium="scrollLeft"><svg>
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down-light"></use>
+                  </svg></div>
+              <div class="scrollingHotSpotRight scrollingHotSpotRightVisible" (click)="rightclick()" data-selenium="scrollRight" style="opacity: 1;"><svg>
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down-light"></use>
+                  </svg></div>
+                      <div class="scrollWrapper">
+                          <div class="scrollableArea" style="width: 2600px;">
+                              <div class="item-container">
+                                  <div class="title-container"> <span class="number-container">1</span>
+                                      <h4>Location, Location, Location</h4>
+                                  </div>
+                                  <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/sba/4_111_1.jpg?itok=WGGEEDaf" alt=""></div>
+                                  <div class="text-container">Find the best spot. Landscape photography is all about location, so get off the beaten path, venture into the unknown, and find the vista that makes you want to take a photograph.</div>
+                                  <div class="badge hidden"></div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="title-container"> <span class="number-container">2</span>
+                                      <h4>Different Perspective</h4>
+                                  </div>
+                                  <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/sba/13_23_0.jpg?itok=kTAPET6N" alt=""></div>
+                                  <div class="text-container">Choose the right lens. Landscape lenses are usually wide-angle lenses—however, you can also use normal and telephoto lenses to create a more focused perspective or panoramic images.</div>
+                                  <div class="badge hidden"></div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="title-container"> <span class="number-container">3</span>
+                                      <h4>Time of Day</h4>
+                                  </div>
+                                  <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/sba/7_60_0.jpg?itok=tVQFQJyF" alt=""></div>
+                                  <div class="text-container">Planning is key. You always want to capture good light; the most photogenic light occurs around sunrise and sunset. Arriving extra early to your destination is always a good practice.</div>
+                                  <div class="badge hidden"></div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="title-container"> <span class="number-container">4</span>
+                                      <h4>Stability</h4>
+                                  </div>
+                                  <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/sba/2-camping_0061_0.jpg?itok=RsYUcu_L" alt=""></div>
+                                  <div class="text-container">Use a tripod. Tripods are multi-purpose. They enable you to more carefully compose your shot, get sharper images, and allow for increased exposure times.</div>
+                                  <div class="badge hidden"></div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="title-container"> <span class="number-container">5</span>
+                                      <h4>Panorama Mode</h4>
+                                  </div>
+                                  <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/sba/golden_top_shot-1_1.jpg?itok=YHmcCMUZ" alt=""></div>
+                                  <div class="text-container">Try Panorama Mode. This mode lets you&nbsp; capture extreme wide-field photographs (up to 360°) in-camera. The mode can also come in handy when shooting in tight spaces.</div>
+                                  <div class="badge hidden"></div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="title-container"> <span class="number-container">6</span>
+                                      <h4>Weather</h4>
+                                  </div>
+                                  <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/sba/shutterstock_401616580_0.jpg?itok=gWe8wOh8" alt=""></div>
+                                  <div class="text-container">Know the weather. When possible check the weather ahead of time and plan the day’s timeline accordingly. Be safe when conditions are less-than-perfect. Use the weather to help your photographs.</div>
+                                  <div class="badge hidden"></div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="title-container"> <span class="number-container">7</span>
+                                      <h4>Camera Supports</h4>
+                                  </div>
+                                  <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/sba/shutterstock_276414578_1.jpg?itok=5uuwzhiN" alt=""></div>
+                                  <div class="text-container">Use alternative supports. There are a number of small, lightweight devices for positioning cameras on small outcrops, rocks, or other surfaces that are less-than-friendly to full-size tripods.</div>
+                                  <div class="badge hidden"></div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="title-container"> <span class="number-container">8</span>
+                                      <h4>Be Safe</h4>
+                                  </div>
+                                  <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/sba/shutterstock_306007877.jpg?itok=3Wer7H-6" alt=""></div>
+                                  <div class="text-container">Safety first. Regardless on where you are taking your landscape photo, be it a National Park or urban setting, always be smart and protect yourself and your gear.</div>
+                                  <div class="badge hidden"></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                <!--#endregion beginer-tips-view-->
+
+                <!--#region pro-tips-view-->
+                <div id="pro-tips-view" class="guides-tips-view clearfix visible" *ngIf="_displayView=='pro-tips-view'">
+                  <div class="smooth-div-scroll-container">
+                    <div class="scrollingHotSpotLeft  scrollingHotSpotLeftVisible" (click)="leftclick()" style="opacity: 1;" data-selenium="scrollLeft"><svg>
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down-light"></use>
+                  </svg></div>
+              <div class="scrollingHotSpotRight scrollingHotSpotRightVisible" (click)="rightclick()" data-selenium="scrollRight" style="opacity: 1;"><svg>
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down-light"></use>
+                  </svg></div>
+                      <div class="scrollWrapper">
+                          <div class="scrollableArea" style="width: 2600px;">
+                              <div class="item-container">
+                                  <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/sba/shutterstock_244794538_0.jpg?itok=KWxA6ScT" alt=""></div>
+                                  <h4>Filters</h4>
+                                  <div class="text-container">Use filters that can improve landscape photography. Polarizing filters reduce glare and intensify skies;&nbsp; graduated neutral density filters balance differences between uneven foreground and background exposure values.</div>
+                                  <div class="badge hidden"></div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/sba/shutterstock_378539728.jpg?itok=7r27GPHp" alt=""></div>
+                                  <h4>Reflections</h4>
+                                  <div class="text-container">Look for reflections in water that add an extra element of depth to scenic photographs. Depending on the stillness of the water, the symmetry of the subject and its mirrored reflection can make for a powerful composition.</div>
+                                  <div class="badge hidden"></div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/sba/shutterstock_143711224.jpg?itok=7zjvO4wv" alt=""></div>
+                                  <h4>Foregrounds &amp; Backgrounds</h4>
+                                  <div class="text-container">Be conscious of your scene. When photographing landscapes make sure you include a dominant visual element in the foreground or background. This can include large rocks or trees, flowing or still water, billowing clouds, a structure, or the moon.</div>
+                                  <div class="badge hidden"></div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/sba/shutterstock_214117450.jpg?itok=3Gc8MjoD" alt=""></div>
+                                  <h4>Pre-Scout Location</h4>
+                                  <div class="text-container">Preparation makes perfection. If you’ve traveled a long distance or woken up at 3AM to get the picture, it’s a good idea to scout the area you want to photograph, establish a good camera position, and finalize your game plan in advance.</div>
+                                  <div class="badge hidden"></div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/sba/shutterstock_169297610_1.jpg?itok=0d7XGIY-" alt=""></div>
+                                  <h4>Dynamic Range</h4>
+                                  <div class="text-container">Conquer extreme lighting scenarios with graduated neutral density filters. The eye can see, in one scene, bright regions and dark shadows, but the camera needs help.</div>
+                                  <div class="badge hidden"></div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/sba/shutterstock_154201754.jpg?itok=G0tSwHz6" alt=""></div>
+                                  <h4>Foliage</h4>
+                                  <div class="text-container">Use a polarizer to make foliage colors pop. Not only does a polarizer make for deep blue skies, it can also reduce glare and bring out rich colors.</div>
+                                  <div class="badge hidden"></div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/sba/shutterstock_263170862.jpg?itok=4SLvoduL" alt=""></div>
+                                  <h4>Water Movement</h4>
+                                  <div class="text-container">Freeze water with fast shutter speeds, or show flow with a longer shutter speed. Change your settings as you shoot to get the perfect aesthetic.</div>
+                                  <div class="badge hidden"></div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="image-container"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/sba/shutterstock_426883768.jpg?itok=Y3uTiA-8" alt=""></div>
+                                  <h4>Leading Lines</h4>
+                                  <div class="text-container">Use lines to draw the viewer into the frame. Lines appear in every photograph and they are traffic directors for your eyes. Use them to show depth and create dramatic compositions.&nbsp;</div>
+                                  <div class="badge hidden"></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                <!--#endregion pro-tips-view-->
+
+                <!--#region talk-to-experts-view-->
+                <div id="talk-to-experts-view" class="clearfix visible" *ngIf="_displayView=='talk-to-experts-view'">
+                  <div class="contact-column">
+                      <h4>Speak to an Expert</h4>
+                      <div class="text-container"> Why go out on a limb solo? Our experts can help you branch out into landscape or scenic photography, easy. So whether you’ve scouted sweeping vistas or serene cityscapes for your next project, our tips, technical tricks and savvy advice can give you the lay of the land in a snap.​ </div>
+                      <div class="bottom-content clearfix">
+                          <div class="experts-images clearfix">
+                              <div class="expert-image-container" title=""><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_expert/public/sba/luis_lopez_2.png?itok=UUq6jXRG" alt=""></div>
+                              <div class="expert-image-container" title=""><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_expert/public/sba/neil_gershman_1.png?itok=5fqNhvT3" alt=""></div>
+                          </div>
+                          <div class="buttons-container">
+                              <ul class="buttons-list clearfix">
+                                  <li>
+                                      <p data-selenium="liveChat" class="button chat-link overlay-on-hover cursor-pointer"><svg>
+                                              <use xlink:href="#chat-square"></use>
+                                          </svg> <span class="label">Live Chat</span></p>
+                                  </li>
+                                  <li><a href="https://www.bhphotovideo.com/find/contactForm.jsp" data-selenium="emailUs" target="_self" class="button email-link overlay-on-hover"><svg>
+                                              <use xlink:href="#envelope-light"></use>
+                                          </svg> <span class="label">Email Us</span></a></li>
+                                  <li><span data-selenium="phoneNumber" class="button phone-number"><svg>
+                                              <use xlink:href="#phone"></use>
+                                          </svg> <span class="label">800.606.6969</span></span></li>
+                                  <li class="meet-our-experts-item"><a href="https://www.bhphotovideo.com/find/shared/experts-profiles.jsp?ci=989" data-selenium="meetOurExperts" target="_self" class="button view-experts-link overlay-on-hover"><svg>
+                                              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                  <g transform="translate(-1043.000000, -607.000000)">
+                                                      <g transform="translate(1045.132599, 609.000000)">
+                                                          <path d="M7.3330051,23.6842105 L1.31578947,17.6787221 L9.34656173,13.7383894 C9.34656173,13.7383894 8.17970702,11.5454076 7.79271012,9.99742002 C7.40571321,8.44943241 7.40571348,6.77244582 8.17970729,5.2244582 C8.9537011,3.67647059 10.3209868,3.2894737 12.2431743,3.28947368 C14.1653619,3.28947367 15.1397875,3.69992484 16.0545075,5.22445814 C16.9692274,6.74899144 17.0219997,7.89825513 16.6643208,9.99742002 C16.3066419,12.0965849 14.8348809,13.7383898 14.8348809,13.7383898 L22.1356367,18.0921053 C22.1356367,18.0921053 23.1224788,19.4078947 17.8593209,23.0263158 C12.596163,26.6447368 7.3330051,23.6842105 7.3330051,23.6842105 Z" fill="#FFFFFF"></path>
+                                                          <circle id="Oval" stroke="#FFFFFF" stroke-width="3" cx="12.1710526" cy="12.1710526" r="12.1710526"></circle>
+                                                      </g>
+                                                  </g>
+                                              </g>
+                                          </svg> <span class="label">Meet Our Experts</span></a> </li>
+                              </ul>
+                          </div><!-- /buttons-container -->
+                      </div><!-- /bottom-content -->
+                  </div><!-- /contact-column -->
                 </div>
+                <!--#endregion talk-to-experts-view-->
+
+                <!--#region articles-reviews-view-->    
+                <div id="articles-reviews-view" class="clearfix visible" *ngIf="_displayView=='articles-reviews-view'">
+                  <div class="smooth-div-scroll-container">
+                    <div class="scrollingHotSpotLeft  scrollingHotSpotLeftVisible" (click)="leftclick()" style="opacity: 1;" data-selenium="scrollLeft"><svg>
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down-light"></use>
+                  </svg></div>
+              <div class="scrollingHotSpotRight scrollingHotSpotRightVisible" (click)="rightclick()" data-selenium="scrollRight" style="opacity: 1;"><svg>
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down-light"></use>
+                  </svg></div>
+                      <div class="scrollWrapper">
+                          <div class="scrollableArea" style="width: 3675px;">
+                              <div class="item-container">
+                                  <div class="">
+                                      <div class="image-container"> <a class="js-iframeLoad" href="/explora/photography/tips-and-solutions/tips-for-landscape-photography"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/23970-cs.jpg?itok=Ld5E-_3b" alt=""></a> </div>
+                                      <div class="title"> <a class="js-iframeLoad" href="/explora/photography/tips-and-solutions/tips-for-landscape-photography">Tips for Landscape Photography</a> </div>
+                                  </div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="">
+                                      <div class="image-container"> <a class="js-iframeLoad" href="/explora/photography/features/winter-night-magic-with-astrophotographer-rachel-jones-ross"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/24958-covershot.jpg?itok=RRYsYPtb" alt=""></a> </div>
+                                      <div class="title"> <a class="js-iframeLoad" href="/explora/photography/features/winter-night-magic-with-astrophotographer-rachel-jones-ross">Winter Night Magic, with Astrophotographer Rachel Jones Ross</a> </div>
+                                  </div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="">
+                                      <div class="image-container"> <a class="js-iframeLoad" href="/explora/photography/features/landscape-photography-in-central-new-york-is-gorges"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/23311-covershot-camping_1122.jpg?itok=71BRUBKm" alt=""></a> </div>
+                                      <div class="title"> <a class="js-iframeLoad" href="/explora/photography/features/landscape-photography-in-central-new-york-is-gorges">Landscape Photography in Central New York is… Gorges</a> </div>
+                                  </div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="">
+                                      <div class="image-container"> <a class="js-iframeLoad" href="/explora/photography/buying-guide/gift-guide-for-landscape-photographers"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/24538-covershot1.jpg?itok=cBYOaQKQ" alt=""></a> </div>
+                                      <div class="title"> <a class="js-iframeLoad" href="/explora/photography/buying-guide/gift-guide-for-landscape-photographers">Gift Guide for Landscape Photographers</a> </div>
+                                  </div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="">
+                                      <div class="image-container"> <a class="js-iframeLoad" href="/explora/photography/tips-and-solutions/infographic-essential-tips-for-cold-weather-photography"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/cs-infographic-essential-tips-for-cold-weather-photography.jpg?itok=tgCtGw3q" alt=""></a> </div>
+                                      <div class="title"> <a class="js-iframeLoad" href="/explora/photography/tips-and-solutions/infographic-essential-tips-for-cold-weather-photography">Infographic: Essential Tips for Cold-Weather Photography</a> </div>
+                                  </div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="">
+                                      <div class="image-container"> <a class="js-iframeLoad" href="/explora/photography/features/north-dakota-driving-guide-theodore-roosevelt-national-park"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/covershot_138.jpg?itok=EuQ4gCi0" alt=""></a> </div>
+                                      <div class="title"> <a class="js-iframeLoad" href="/explora/photography/features/north-dakota-driving-guide-theodore-roosevelt-national-park">North Dakota Driving Guide: Theodore Roosevelt National Park</a> </div>
+                                  </div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="">
+                                      <div class="image-container"> <a class="js-iframeLoad" href="/explora/photography/features/podcast-landscape-masters-michael-kenna-paul-caponigro-and-john-paul-caponigro"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/capo_003cs.jpg?itok=wd_z9YE0" alt=""></a> </div>
+                                      <div class="title"> <a class="js-iframeLoad" href="/explora/photography/features/podcast-landscape-masters-michael-kenna-paul-caponigro-and-john-paul-caponigro">Podcast: Landscape Masters Michael Kenna, Paul Caponigro and John Paul Caponigro</a> </div>
+                                  </div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="">
+                                      <div class="image-container"> <a class="js-iframeLoad" href="/explora/photography/tips-and-solutions/tips-and-techniques-for-creating-memorable-landscape-photographs-with"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/CS_24.jpg?itok=_mepQEc1" alt=""></a> </div>
+                                      <div class="title"> <a class="js-iframeLoad" href="/explora/photography/tips-and-solutions/tips-and-techniques-for-creating-memorable-landscape-photographs-with">Tips and Techniques for Creating Memorable Landscape Photographs, with Michael Melford</a> </div>
+                                  </div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="">
+                                      <div class="image-container"> <a class="js-iframeLoad" href="/explora/photography/buying-guide/guide-lenses-landscape-photography"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/covershot3.jpg?itok=fwT7STWK" alt=""></a> </div>
+                                      <div class="title"> <a class="js-iframeLoad" href="/explora/photography/buying-guide/guide-lenses-landscape-photography">A Guide to Lenses for Landscape Photography</a> </div>
+                                  </div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="">
+                                      <div class="image-container"> <a class="js-iframeLoad" href="/explora/photography/buying-guide/guide-accessories-landscape-photography"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/covershot_99.jpg?itok=FmjpyoW0" alt=""></a> </div>
+                                      <div class="title"> <a class="js-iframeLoad" href="/explora/photography/buying-guide/guide-accessories-landscape-photography">A Guide to Accessories for Landscape Photography</a> </div>
+                                  </div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="">
+                                      <div class="image-container"> <a class="js-iframeLoad" href="/explora/photography/buying-guide/guide-cameras-landscape-photography"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/cs-lanscape-photography.jpg?itok=MAWxxK6d" alt=""></a> </div>
+                                      <div class="title"> <a class="js-iframeLoad" href="/explora/photography/buying-guide/guide-cameras-landscape-photography">A Guide to Cameras for Landscape Photography </a> </div>
+                                  </div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="">
+                                      <div class="image-container"> <a class="js-iframeLoad" href="/explora/photography/tips-and-solutions/bh-prospectives-video-landscape-photography-with-robert-rodriguez-jr"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/COVERRobert-Rodriguez-Jr.jpg?itok=9gPPV7Ka" alt=""></a> </div>
+                                      <div class="title"> <a class="js-iframeLoad" href="/explora/photography/tips-and-solutions/bh-prospectives-video-landscape-photography-with-robert-rodriguez-jr">B&amp;H Prospectives Video: Landscape Photography, with Robert Rodriguez Jr.</a> </div>
+                                  </div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="">
+                                      <div class="image-container"> <a class="js-iframeLoad" href="/explora/photography/tips-and-solutions/creating-dynamic-landscape-photographs"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/dynamic_photographscs.jpg?itok=1ABvc10a" alt=""></a> </div>
+                                      <div class="title"> <a class="js-iframeLoad" href="/explora/photography/tips-and-solutions/creating-dynamic-landscape-photographs">Creating Dynamic Landscape Photographs</a> </div>
+                                  </div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="">
+                                      <div class="image-container"> <a class="js-iframeLoad" href="/explora/photography/tips-and-solutions/video-essentials-creative-composition-landscape-photography"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/cscreativelan.jpg?itok=DjZosZ69" alt=""></a> </div>
+                                      <div class="title"> <a class="js-iframeLoad" href="/explora/photography/tips-and-solutions/video-essentials-creative-composition-landscape-photography">Video: Essentials of Creative Composition in Landscape Photography</a> </div>
+                                  </div>
+                              </div>
+                              <div class="item-container">
+                                  <div class="">
+                                      <div class="image-container"> <a class="js-iframeLoad" href="/explora/photography/tips-and-solutions/the-risks-and-rewards-of-geotagging"><img src="//static.bhphotovideo.com/explora/sites/default/files/styles/sba_thumbnail/public/25359-cs.jpg?itok=6P-4o9cl" alt=""></a> </div>
+                                      <div class="title"> <a class="js-iframeLoad" href="/explora/photography/tips-and-solutions/the-risks-and-rewards-of-geotagging">The Risks and Rewards of Geotagging</a> </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                <!--#endregion articles-reviews-view-->
+
               </div><!-- /group-display-region -->
             </div><!-- /explora-content -->
           </div>
-        </section> <a id="top-categories" name="top-categories" class="hidden"></a>
+        </section>
+         <a id="top-categories" name="top-categories" class="hidden"></a>
         <section id="top-categories-region">
           <div id="top-categories-view" class="new-page-width clearfix">
             <div class="category-item-view clearfix category-level-1">

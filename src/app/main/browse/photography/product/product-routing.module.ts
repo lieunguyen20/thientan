@@ -26,6 +26,7 @@ import {UnderwaterComponent} from './underwater/underwater.component';
 
 
 const routes: Routes = [
+  
   {
     path: 'digital-camera', 
   component : DigitalCameraComponent
